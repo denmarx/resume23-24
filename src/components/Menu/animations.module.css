@@ -1,0 +1,27 @@
+@keyframes flyUp {
+  from {
+    transform: translateY(50rem);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.flyUpAnimation {
+  animation: flyUp 0.8s ease-out forwards;
+}
+
+@keyframes revealFromBottomToTop {
+  from {
+    clip-path: inset(100% 0 0 0); /* Start with a full vertical inset */
+  }
+  to {
+    clip-path: inset(0 0 0 0); /* End with no inset */
+  }
+}
+
+.imageReveal {
+  animation: revealFromBottomToTop 2s cubic-bezier(0.01, 0.5, 0.99, 1) forwards;
+}

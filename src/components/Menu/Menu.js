@@ -1,18 +1,13 @@
-import React, { useState } from 'react';
 import styles from './Menu.module.css';
 import MenuUtils from '../utils/MenuUtils';
 import TopMenu from './TopMenu';
+import Nav from './Nav';
 
 const Menu = () => {
   const { isTopMenuVisible, toggleTopMenu } = MenuUtils();
   return (
     <div className={styles.menuWrap}>
-      <button className={styles.menuButton} onClick={toggleTopMenu}>
-        Menu
-      </button>
-      <a className={styles.contactMe} href='/'>
-        Contact me
-      </a>
+      <Nav toggleTopMenu={toggleTopMenu} />
       {isTopMenuVisible && <TopMenu toggleTopMenu={toggleTopMenu} />}
     </div>
   );
