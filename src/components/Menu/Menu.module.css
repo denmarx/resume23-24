@@ -1,0 +1,28 @@
+.menuWrap {
+  position: relative;
+  background-color: #c1e3ff;
+}
+
+.menuButton {
+  position: fixed;
+}
+
+.contactMe {
+  text-decoration: none;
+  position: fixed;
+  right: 65px;
+  z-index: 20000;
+}
+
+.topMenu {
+  position: absolute;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #e5eba6;
+  height: 100vh;
+  overflow: hidden;
+  /* display: flex; */
+  /* flex-direction: column; */
+}

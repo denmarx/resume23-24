@@ -1,3 +1,10 @@
 #App-container {
   padding: 0.5em;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.main-content {
+  background: #c1e3ff;
+  height: 100vh;
 }
