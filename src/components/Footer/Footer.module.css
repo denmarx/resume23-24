@@ -1,9 +1,42 @@
 .info {
-  position: relative;
+  position: fixed;
+  bottom: 0;
+  left: 0;
   justify-content: space-between;
-  /* -ms-flex-align: end; */
-  /* align-items: flex-end; */
-  /* width: 100vw; */
   padding: 2.5vh 60px 3vh;
   display: flex;
+  z-index: 10;
+  transition: opacity 0.3s ease-out;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.infoLeft,
+.infoRight {
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-fill-mode: forwards;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+}
+
+.infoLeft {
+  animation-delay: 0s;
+}
+
+.infoRight {
+  animation-delay: 0.5s;
+}
+
+.hide {
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
