@@ -1,5 +1,5 @@
 import styles from './Menu.module.css';
-import MenuUtils from '../utils/MenuUtils';
+import MenuUtils from '../utils/js/MenuUtils';
 import TopMenu from './TopMenu';
 import Nav from './Nav';
 

@@ -1,0 +1,9 @@
+.info {
+  position: relative;
+  justify-content: space-between;
+  /* -ms-flex-align: end; */
+  /* align-items: flex-end; */
+  /* width: 100vw; */
+  padding: 2.5vh 60px 3vh;
+  display: flex;
+}

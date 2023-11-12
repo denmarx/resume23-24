@@ -23,5 +23,5 @@
 }
 
 .imageReveal {
-  animation: revealFromBottomToTop 2s cubic-bezier(0.01, 0.5, 0.99, 1) forwards;
+  animation: revealFromBottomToTop 1.3s cubic-bezier(0.94, 0, 1, 1) forwards;
 }

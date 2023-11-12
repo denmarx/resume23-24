@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import animations from '../Menu/animations.module.css';
+import animations from '../animations/animations.module.css';
 
 const useFlyUpAnimation = () => {
   const ref = useRef(null);

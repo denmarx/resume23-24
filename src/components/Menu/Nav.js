@@ -1,6 +1,5 @@
 import styles from './Nav.module.css';
-import useFlyUpAnimation from '../utils/useFlyUpAnimation';
-// import '../Menu/animations.module.css';
+import useFlyUpAnimation from '../utils/js/useFlyUpAnimation';
 
 const Nav = ({ toggleTopMenu }) => {
   const buttonRef = useFlyUpAnimation();
