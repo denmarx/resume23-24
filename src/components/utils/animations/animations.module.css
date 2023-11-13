@@ -25,5 +25,5 @@
 .imageReveal {
   clip-path: inset(100% 0 0 0);
   animation: revealFromBottomToTop 1.3s cubic-bezier(0.94, 0, 1, 1) forwards;
-  animation-delay: 0.7s;
+  animation-delay: 0.5;
 }
