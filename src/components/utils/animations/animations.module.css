@@ -1,3 +1,4 @@
+/* Nav flyUp animation */
 @keyframes flyUp {
   from {
     transform: translateY(50rem);
@@ -13,6 +14,7 @@
   animation: flyUp 0.8s ease-out forwards;
 }
 
+/* Hero reveal on load */
 @keyframes revealFromBottomToTop {
   from {
     clip-path: inset(100% 0 0 0); /* Start with a full vertical inset */
@@ -26,4 +28,50 @@
   clip-path: inset(100% 0 0 0);
   animation: revealFromBottomToTop 1.3s cubic-bezier(0.94, 0, 1, 1) forwards;
   animation-delay: 0.5;
+}
+
+/* Title fadeIn */
+@keyframes fadeInTitle {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fadeInTitle {
+  animation: fadeInTitle 1s forwards;
+  animation-delay: 0.5s;
+  opacity: 0;
+}
+
+/* Footer fadeIn */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.infoLeft,
+.infoRight {
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-fill-mode: forwards;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+}
+
+.infoLeft {
+  animation-delay: 0s;
+}
+
+.infoRight {
+  animation-delay: 0.5s;
+}
+
+.hide {
+  opacity: 0;
 }

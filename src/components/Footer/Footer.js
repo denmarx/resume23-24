@@ -1,12 +1,13 @@
 import styles from './Footer.module.css';
+import stylesAnimation from '../utils/animations/animations.module.css';
 import useScrollAnimation from '../utils/js/useScrollAnimation';
 
 const Footer = () => {
   const isVisible = useScrollAnimation();
 
   return (
-    <div className={`${styles.info} ${!isVisible ? styles.hide : ''}`}>
-      <div className={styles.infoLeft}>
+    <div className={`${styles.info} ${!isVisible ? stylesAnimation.hide : ''}`}>
+      <div className={`${styles.infoLeft} ${stylesAnimation.infoLeft}`}>
         <div className={styles.infoContact}>
           <ul>
             <li>Dennis Marx</li>
@@ -18,7 +19,7 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-      <div className={styles.infoRight}>
+      <div className={`${styles.infoRight} ${stylesAnimation.infoRight}`}>
         <nav className={styles.social}>
           <ul>
             <li>
