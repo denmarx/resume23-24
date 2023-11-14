@@ -13,9 +13,23 @@
 }
 
 .infoLeft {
-  padding-left: 100px;
+  margin-left: 1.3rem;
+  position: fixed;
+  left: 4rem;
+  bottom: 3rem;
 }
 
 .infoRight {
-  padding-right: 100px;
+  position: fixed;
+  right: 4rem;
+  bottom: 3rem;
+}
+
+.infoContact {
+  display: flex;
+}
+
+.infoContact > ul {
+  text-decoration: none;
+  list-style: none;
 }

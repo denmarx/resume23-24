@@ -9,9 +9,8 @@ const App = () => {
       <Menu />
       <div className='main-content'>
         <Content />
-        <div>"Lorem ipsum asjdaisjdioajsdojasidjoasj"</div>
-        <Footer />
       </div>
+      <Footer />
     </div>
   );
 };

@@ -1,4 +1,4 @@
-.image {
+.titleImage {
   position: absolute;
   top: 0;
   left: 0;
@@ -15,12 +15,13 @@
   position: relative;
   height: 60vh;
   z-index: 2;
+  transform: translateY();
 }
 
 .title {
   position: relative;
   top: 0;
-  right: 3rem;
+  right: 13%;
   transform: translate(0, -50%);
   z-index: 2;
   color: hsla(0, 0%, 95%, 0.01);
