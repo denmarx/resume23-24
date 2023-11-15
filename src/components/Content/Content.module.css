@@ -15,7 +15,8 @@
   position: relative;
   height: 60vh;
   z-index: 2;
-  transform: translateY();
+  /* transform: translateY(); */
+  transition: transform 2s ease-out;
 }
 
 .title {
