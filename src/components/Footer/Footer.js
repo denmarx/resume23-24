@@ -9,13 +9,15 @@ const Footer = () => {
     <div className={`${styles.info} ${!isVisible ? stylesAnimation.hide : ''}`}>
       <div className={`${styles.infoLeft} ${stylesAnimation.infoLeft}`}>
         <div className={styles.infoContact}>
-          <ul>
+          <ul className={styles.occupation}>
             <li>Dennis Marx</li>
             <li>Web Developer</li>
           </ul>
-          <ul>
+          <ul className={styles.location}>
             <li>Bremen, Germany</li>
-            <li>info@email.com</li>
+            <li>
+              <strong>info@email.com</strong>
+            </li>
           </ul>
         </div>
       </div>
@@ -25,19 +27,19 @@ const Footer = () => {
             <li>
               <a href='/' target='_blanks' rel='noopener'>
                 <span>01</span>
-                <strong>instagram</strong>
+                <strong>GitHub</strong>
               </a>
             </li>
             <li>
               <a href='/' target='_blanks' rel='noopener'>
                 <span>02</span>
-                <strong>twitter</strong>
+                <strong>ResearchGate</strong>
               </a>
             </li>
             <li>
               <a href='/' target='_blanks' rel='noopener'>
                 <span>03</span>
-                <strong>linkedin</strong>
+                <strong>YouTube</strong>
               </a>
             </li>
           </ul>
