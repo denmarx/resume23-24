@@ -1,0 +1,51 @@
+.titleImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-image: url('../../assets/dev1.jpg'); */
+  background-position: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 0;
+}
+
+.titleContainer {
+  position: relative;
+  height: 60vh;
+  z-index: 2;
+  /* transform: translateY(); */
+  transition: transform 2s ease-out;
+}
+
+.title {
+  position: relative;
+  /* top: 15%; */
+  /* left: 20%; */
+  z-index: 2;
+  /* color: hsla(0, 0%, 0%, 0.01); */
+  /* -webkit-text-stroke: 2px #000000; */
+  font-family: Helvetica, sans-serif;
+  transition: transform 4s ease-out;
+}
+
+h1 {
+  margin-bottom: 0.5em;
+  margin-left: 4px;
+  font-size: 1.3em;
+}
+
+h2 {
+  font-size: 4em;
+  letter-spacing: 0.02em;
+}
+
+h3 {
+  font-size: 4em;
+}
+
+p {
+  margin-top: 1.2em;
+  max-width: 540px;
+}
