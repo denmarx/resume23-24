@@ -20,8 +20,16 @@ const useTitleScrollAnimation = () => {
     const scrollAmount = Math.min(currentScrollY * scalingFactor, maxScroll);
     // creates slowing effect of animation
     const newValue = transformValue + (scrollAmount - transformValue) * easeOutCubic(0.05);
+
+    // Check if scroll is at the top and set transformValue to 0
+    if (currentScrollY === 0) {
+      setTransformValue(0);
+      return;
+    }
+
     // updates transform value
     setTransformValue(newValue);
+
     // if animation is not near max scroll, keep going
     if (Math.abs(newValue - transformValue) > 1) {
       requestRef.current = requestAnimationFrame(animate);

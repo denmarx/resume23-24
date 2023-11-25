@@ -1,5 +1,46 @@
-.projectsContainer {
-  width: 100px;
+.aboutContainer {
+  /* width: 100px;
   height: 100px;
-  background-color: aqua;
+  background-color: aqua; */
+}
+
+.aboutMeHead::before {
+  counter-increment: section 1;
+  content: '0' counter(section) '.';
+  margin-right: 10px;
+}
+
+.aboutMeHead::after {
+  content: '';
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.skillsList {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(140px, 200px));
+  margin-top: 1em;
+  list-style-type: none;
+}
+
+li::before {
+  content: '▹';
+  /* position: absolute;
+  left: 0px; */
+}
+
+.imageWrapper {
+  flex-shrink: 0;
+  width: 500px;
+}
+
+img {
+  height: auto;
+  width: 100%;
+  object-fit: cover;
 }

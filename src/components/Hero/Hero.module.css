@@ -13,7 +13,7 @@
 
 .titleContainer {
   position: relative;
-  height: 60vh;
+  height: 100vh;
   z-index: 2;
   /* transform: translateY(); */
   transition: transform 2s ease-out;
@@ -21,7 +21,7 @@
 
 .title {
   position: relative;
-  /* top: 15%; */
+  top: 30%;
   /* left: 20%; */
   z-index: 2;
   /* color: hsla(0, 0%, 0%, 0.01); */
