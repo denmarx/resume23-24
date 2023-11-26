@@ -10,17 +10,33 @@
   }
 }
 
-.flyUpAnimation {
+.navFlyUpAnimation {
   animation: flyUp 0.8s ease-out forwards;
+}
+
+/* About fly up on scroll*/
+@keyframes revealOnScroll {
+  from {
+    transform: translateY(20vh);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.revealOnScroll {
+  animation: revealOnScroll 1s ease-out forwards;
 }
 
 /* Hero reveal on load */
 @keyframes revealFromBottomToTop {
   from {
-    clip-path: inset(100% 0 0 0); /* Start with a full vertical inset */
+    clip-path: inset(100% 0 0 0);
   }
   to {
-    clip-path: inset(0 0 0 0); /* End with no inset */
+    clip-path: inset(0 0 0 0);
   }
 }
 

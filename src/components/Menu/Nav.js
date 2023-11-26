@@ -1,9 +1,9 @@
 import styles from './Nav.module.css';
-import useFlyUpAnimation from '../utils/js/useFlyUpAnimation';
+import useNavFlyUpAnimation from '../utils/js/useNavFlyUpAnimation';
 
 const Nav = ({ toggleTopMenu }) => {
-  const buttonRef = useFlyUpAnimation();
-  const contactRef = useFlyUpAnimation();
+  const buttonRef = useNavFlyUpAnimation();
+  const contactRef = useNavFlyUpAnimation();
   return (
     <nav>
       <button ref={buttonRef} className={styles.menuButton} onClick={toggleTopMenu}>

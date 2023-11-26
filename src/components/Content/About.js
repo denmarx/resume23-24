@@ -1,16 +1,20 @@
 import styles from './About.module.css';
-import shot from '../../assets/shot.jpg';
+import shot from '../../assets/shot _small.webp';
+import useRevealOnScroll from '../utils/js/useRevealOnScroll';
 
 const About = () => {
+  const addRef = useRevealOnScroll();
   return (
     <section id='aboutSection' className={styles.aboutContainer}>
-      <h2 className={styles.aboutMeHead}>About Me</h2>
+      <h2 className={styles.aboutMeHead} ref={addRef(0.3)}>
+        About Me
+      </h2>
       <div className={styles.inner}>
-        <div className='aboutMeInfo'>
+        <div className={styles.aboutMeInfo} ref={addRef(0.5)}>
           <div>
             <p>Hello there!</p>
             <p>
-              I'm Dennis, a passionate and skilled Web Developer with a strong background in creating dynamic,
+              I am Dennis, a passionate and skilled Web Developer with a strong background in creating dynamic,
               user-friendly websites. With my expertise in the latest web technologies and a keen eye for detail, I am
               dedicated to delivering high-quality web solutions that meet your specific needs.
             </p>
@@ -22,19 +26,19 @@ const About = () => {
             <p>
               Please feel free to reach out to me for any web development needs. Looking forward to working with you!
             </p>
-            <p>Here are a few technologies I've been working with recently:</p>
-            <ul className={styles.skillsList}>
+            <p ref={addRef(0.8)}>Here are a few technologies I've been working with recently:</p>
+            <ul className={styles.skillsList} ref={addRef(1)}>
               <li>JavaScript (ES6+)</li>
-              <li>React</li>
-              <li>Node.js</li>
-              <li>Matter.js</li>
               <li>TypeScript</li>
+              <li>React</li>
+              <li>Matter.js</li>
+              <li>Node.js</li>
               <li>Express.js</li>
             </ul>
           </div>
         </div>
         <div className={styles.imageWrapper}>
-          <img src={shot}></img>
+          <img src={shot} alt='Dennis' ref={addRef(0.5)}></img>
         </div>
       </div>
     </section>

@@ -4,6 +4,10 @@
   background-color: aqua; */
 }
 
+.aboutMeHead {
+  opacity: 0;
+}
+
 .aboutMeHead::before {
   counter-increment: section 1;
   content: '0' counter(section) '.';
@@ -12,6 +16,10 @@
 
 .aboutMeHead::after {
   content: '';
+}
+
+.aboutMeInfo {
+  opacity: 0;
 }
 
 .inner {
@@ -26,9 +34,10 @@
   grid-template-columns: repeat(2, minmax(140px, 200px));
   margin-top: 1em;
   list-style-type: none;
+  opacity: 0;
 }
 
-li::before {
+.skillsList li::before {
   content: '▹';
   /* position: absolute;
   left: 0px; */
@@ -39,8 +48,9 @@ li::before {
   width: 500px;
 }
 
-img {
+.imageWrapper img {
   height: auto;
   width: 100%;
   object-fit: cover;
+  opacity: 0;
 }

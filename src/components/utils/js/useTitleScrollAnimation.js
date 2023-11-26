@@ -60,7 +60,6 @@ const useTitleScrollAnimation = () => {
       }
     };
   }, [animate]); // animate is now a stable function
-  console.log(transformValue);
   return transformValue;
 };
 
