@@ -30,22 +30,22 @@
   transition: transform 4s ease-out;
 }
 
-h1 {
+.title h1 {
   margin-bottom: 0.5em;
   margin-left: 4px;
   font-size: 1.3em;
 }
 
-h2 {
+.title h2 {
   font-size: 4em;
   letter-spacing: 0.02em;
 }
 
-h3 {
+.title h3 {
   font-size: 4em;
 }
 
-p {
+.title p {
   margin-top: 1.2em;
   max-width: 540px;
 }

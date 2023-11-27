@@ -1,3 +1,11 @@
+.aboutWrapper {
+  padding-bottom: 100px;
+}
+
+.aboutWrapper h2 {
+  margin: 10px 0 40px 0;
+}
+
 .aboutMeHead {
   opacity: 0;
 }
@@ -12,15 +20,18 @@
   content: '';
 }
 
-.aboutMeInfo {
-  opacity: 0;
-}
-
 .inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 20px;
+}
+.aboutMeInfo {
+  opacity: 0;
+}
+
+.aboutMeInfo p {
+  margin-bottom: 20px;
 }
 
 .skillsList {

@@ -2,12 +2,12 @@ import styles from './Jobs.module.css';
 
 const Jobs = () => {
   return (
-    <section id='jobs'>
-      <h2>Where I've Worked</h2>
+    <section id='jobs' className={styles.jobsWrapper}>
+      <h2 className={styles.jobHead}>Where I've Worked</h2>
       <div className={styles.inner}>
         <div role='tablist' className={styles.tabList}>
           <button>
-            <span>Bremen Education Service</span>
+            <span>Fraunhofer-Institute</span>
           </button>
           <button>
             <span>Digital Career Advisor</span>
@@ -16,40 +16,40 @@ const Jobs = () => {
             <span>Hospitality Manager</span>
           </button>
           <button>
-            <span>Fraunhofer-Institute</span>
+            <span>Bremen Education Service</span>
           </button>
         </div>
         <div className={styles.jobPanel}>
-          <div role='tabpanel'>
+          <div role='tabpanel' className={styles.tabPanel}>
             <h3>
-              <span>Teacher and Trainee Teacher</span>
+              <span>Scientific Staff Member</span>
             </h3>
-            <p className={styles.range}>October 2022 - Present</p>
+            <p className={styles.range}>November 2017 - October 2020</p>
             <div>
-              <ul>
+              <ul className={styles.jobList}>
                 <li>
-                  Started as a substitute teacher, responsible for covering and conducting classes in chemistry,
-                  biology, and digital media.
+                  Led and conducted research projects in the development of innovative medical implants with enhanced
+                  properties to prevent infections.
+                </li>
+                <li>Applied advanced techniques in material research, surface modification and cell assays.</li>
+                <li>
+                  Presented research findings at international medical fairs and conferences, and delivered expert
+                  lectures.
                 </li>
                 <li>
-                  Progressed to a trainee teacher role, focusing on developing pedagogical skills and deepening subject
-                  knowledge.
+                  Authored and published scientific articles in leading journals, and participated in interdisciplinary
+                  research collaborations.
                 </li>
-                <li>
-                  Designed and implemented innovative teaching methods, particularly in digital media, to enhance
-                  student engagement and learning efficiency.
-                </li>
-                <li>Actively participated in teacher conferences and internal educational training.</li>
               </ul>
             </div>
           </div>
-          <div role='tabpanel'>
+          <div role='tabpanel' className={styles.tabPanel}>
             <h3>
               <span>Self-Employed as a Digital Career Advisor</span>
             </h3>
-            <p className={styles.range}>February 2022 - October 2022</p>
+            <p className={styles.range}>February 2021 - October 2022</p>
             <div>
-              <ul>
+              <ul className={styles.jobList}>
                 <li>
                   Developed customized software solutions to support career counseling, including interactive tools and
                   assessments.
@@ -66,13 +66,13 @@ const Jobs = () => {
               </ul>
             </div>
           </div>
-          <div role='tabpanel'>
+          <div role='tabpanel' className={styles.tabPanel}>
             <h3>
               <span>Hospitality Manager</span>
             </h3>
             <p className={styles.range}>October 2021 - October 2022</p>
             <div>
-              <ul>
+              <ul className={styles.jobList}>
                 <li>Strategic planning and business model development for multiple gastronomy establishments.</li>
                 <li>
                   Oversight of daily operations, including staff management, financial planning, and customer service.
@@ -84,26 +84,26 @@ const Jobs = () => {
               </ul>
             </div>
           </div>
-          <div role='tabpanel'>
+          <div role='tabpanel' className={styles.tabPanel}>
             <h3>
-              <span>Scientific Staff Member</span>
+              <span>Teacher and Trainee Teacher</span>
             </h3>
-            <p className={styles.range}>November 2017 - October 2020</p>
+            <p className={styles.range}>October 2022 - Present</p>
             <div>
-              <ul>
+              <ul className={styles.jobList}>
                 <li>
-                  Led and conducted research projects in the development of innovative medical implants with enhanced
-                  properties to prevent infections.
-                </li>
-                <li>Applied advanced techniques in material research and surface modification.</li>
-                <li>
-                  Presented research findings at international medical fairs and conferences, and delivered expert
-                  lectures.
+                  Started as a substitute teacher, responsible for covering and conducting classes in chemistry,
+                  biology, and digital media.
                 </li>
                 <li>
-                  Authored and published scientific articles in leading journals, and participated in interdisciplinary
-                  research collaborations.
+                  Progressed to a trainee teacher role, focusing on developing pedagogical skills and deepening subject
+                  knowledge.
                 </li>
+                <li>
+                  Designed and implemented innovative teaching methods, particularly in digital media, to enhance
+                  student engagement and learning efficiency.
+                </li>
+                <li>Actively participated in teacher conferences and internal educational training.</li>
               </ul>
             </div>
           </div>

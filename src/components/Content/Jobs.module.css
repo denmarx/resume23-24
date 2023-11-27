@@ -1,6 +1,74 @@
+.jobsWrapper {
+  padding: 100px 0;
+}
+
+.jobHead {
+  margin: 10px 0 40px 0;
+}
+
+.jobHead::before {
+  counter-increment: section 2;
+  content: '0' counter(section) '.';
+  margin-right: 10px;
+}
+
+.jobHead::after {
+  content: '';
+}
+
 .inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 20px;
+}
+
+.tabList {
+  display: flex;
+  flex-direction: column;
+}
+
+.tabList button {
+  text-decoration: none;
+  background-color: transparent;
+  border: 0;
+  position: relative;
+  text-align: left;
+  align-items: center;
+  height: 42px;
+  width: 100%;
+}
+
+.jobPanel {
+  position: relative;
+}
+
+.tabPanel {
+  padding: 10px 5px;
+}
+
+.tabPanel h3 {
+  margin-bottom: 2px;
+  font-size: 22px;
+  line-height: 1.3;
+}
+
+.range {
+  margin-bottom: 25px;
+}
+
+.jobList {
+  list-style-type: none;
+}
+
+.jobList li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 10px;
+}
+
+.jobList ::before {
+  content: '▹';
+  position: absolute;
+  left: 0px;
 }
