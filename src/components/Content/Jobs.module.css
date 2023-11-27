@@ -1,5 +1,7 @@
 .jobsWrapper {
   padding: 100px 0;
+  max-width: 700px;
+  margin: 0px auto;
 }
 
 .jobHead {
@@ -21,11 +23,15 @@
   align-items: center;
   justify-content: space-between;
   gap: 20px;
+  min-height: 340px;
 }
 
 .tabList {
   display: flex;
   flex-direction: column;
+  width: max-content;
+  padding: 0px;
+  margin: 0px;
 }
 
 .tabList button {
@@ -33,10 +39,12 @@
   background-color: transparent;
   border: 0;
   position: relative;
+  display: flex;
   text-align: left;
   align-items: center;
   height: 42px;
   width: 100%;
+  white-space: nowrap;
 }
 
 .jobPanel {
@@ -71,4 +79,8 @@
   content: '▹';
   position: absolute;
   left: 0px;
+}
+
+.hide {
+  display: none;
 }
