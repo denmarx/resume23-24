@@ -5,7 +5,7 @@ import useRevealOnScroll from '../utils/js/useRevealOnScroll';
 const About = () => {
   const addRef = useRevealOnScroll();
   return (
-    <section id='aboutSection' className={styles.aboutContainer}>
+    <section id='aboutSection'>
       <h2 className={styles.aboutMeHead} ref={addRef(0.3)}>
         About Me
       </h2>
