@@ -97,11 +97,11 @@
 }
 
 .infoLeft {
-  animation-delay: 0s;
+  animation-delay: 1s;
 }
 
 .infoRight {
-  animation-delay: 0.5s;
+  animation-delay: 1s;
 }
 
 .hide {

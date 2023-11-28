@@ -10,7 +10,7 @@ const App = () => {
   return (
     <div id='App-container'>
       <Menu />
-      <main className='main-content'>
+      <main className='main-content fillHeight'>
         <Hero />
         <About />
         <Jobs />

@@ -6,12 +6,12 @@ const useScrollAnimation = () => {
   useEffect(() => {
     const handleScroll = () => {
       const viewportHeight = window.innerHeight;
-      const halfViewportHeight = viewportHeight / 2;
+      const tenthOfViewportHeight = viewportHeight / 10;
       const fullHeight = document.body.scrollHeight;
       const fromTop = window.scrollY;
 
       const isAtBottom = fromTop + viewportHeight >= fullHeight;
-      const isPastHalf = fromTop > halfViewportHeight;
+      const isPastHalf = fromTop > tenthOfViewportHeight;
 
       if (isAtBottom || !isPastHalf) {
         setIsVisible(true);

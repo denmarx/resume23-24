@@ -1,5 +1,8 @@
 import styles from './Projects.module.css';
 import enzyme from '../../assets/enzyme.JPG';
+import bfs from '../../assets/bfs.JPG';
+import memento from '../../assets/memento.jpg';
+import v1_website from '../../assets/v1_website.JPG';
 const Projects = () => {
   return (
     <section id='projects' className={styles.projectWrapper}>
@@ -128,7 +131,7 @@ const Projects = () => {
           <div className={styles.projectImage}>
             <a href='/' rel='noopener noreferrer' target='_blank'>
               <div className={styles.imageWrapper}>
-                <img aria-hidden='true' data-placeholder-image='' decoding='async' src={enzyme} alt=''></img>
+                <img aria-hidden='true' data-placeholder-image='' decoding='async' src={bfs} alt=''></img>
               </div>
             </a>
           </div>
@@ -192,7 +195,7 @@ const Projects = () => {
           <div className={styles.projectImage}>
             <a href='/' rel='noopener noreferrer' target='_blank'>
               <div className={styles.imageWrapper}>
-                <img aria-hidden='true' data-placeholder-image='' decoding='async' src={enzyme} alt=''></img>
+                <img aria-hidden='true' data-placeholder-image='' decoding='async' src={memento} alt=''></img>
               </div>
             </a>
           </div>
@@ -256,7 +259,7 @@ const Projects = () => {
           <div className={styles.projectImage}>
             <a href='/' rel='noopener noreferrer' target='_blank'>
               <div className={styles.imageWrapper}>
-                <img aria-hidden='true' data-placeholder-image='' decoding='async' src={enzyme} alt=''></img>
+                <img aria-hidden='true' data-placeholder-image='' decoding='async' src={v1_website} alt=''></img>
               </div>
             </a>
           </div>
