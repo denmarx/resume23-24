@@ -20,7 +20,7 @@
 
 .inner {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   justify-content: space-between;
   gap: 20px;
   min-height: 340px;
@@ -43,9 +43,29 @@
   display: flex;
   text-align: left;
   align-items: center;
+  -webkit-box-align: center;
   height: 42px;
   width: 100%;
   white-space: nowrap;
+}
+
+.tabHighlightBar {
+  position: relative;
+  height: 168px;
+  background-color: #ccc;
+  width: 2px;
+}
+
+.tabHighlight {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 2px;
+  height: 42px;
+  border-radius: 4px;
+  background: #000;
+  transition: transform 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0.1s;
 }
 
 .jobPanel {
