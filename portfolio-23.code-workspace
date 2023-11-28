@@ -1,0 +1,13 @@
+{
+  "folders": [
+	{
+		"path": "."
+	},
+	{
+		"path": "../matrix"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "robs pf"
+  }
+}

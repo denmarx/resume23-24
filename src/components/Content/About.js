@@ -26,7 +26,9 @@ const About = () => {
             <p>
               Please feel free to reach out to me for any web development needs. Looking forward to working with you!
             </p>
-            <p ref={addRef(0.8)}>Here are a few technologies I've been working with recently:</p>
+            <p className={styles.skillsListParagraph} ref={addRef(0.8)}>
+              Here are a few technologies I've been working with recently:
+            </p>
             <ul className={styles.skillsList} ref={addRef(1)}>
               <li>JavaScript (ES6+)</li>
               <li>TypeScript</li>

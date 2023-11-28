@@ -15,12 +15,14 @@ const Jobs = () => {
 
   useEffect(() => {
     const activeIndex = jobNames.indexOf(activeJob);
-    const translateY = `calc(${activeIndex} * 42px)`;
-
-    setHighlightStyle({
-      transform: `translateY(${translateY})`,
-    });
-  }, [activeJob, jobNames]);
+    // Ensure that activeIndex is valid
+    if (activeIndex !== -1) {
+      const translateY = `calc(${activeIndex} * 42px)`;
+      setHighlightStyle({
+        transform: `translateY(${translateY})`,
+      });
+    }
+  }, [activeJob, jobNames.length]);
 
   return (
     <section id='jobs' className={styles.jobsWrapper}>

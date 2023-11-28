@@ -8,6 +8,13 @@
 
 .aboutMeHead {
   opacity: 0;
+  display: flex;
+  margin: 10px 0 40px 0;
+  -webkit-box-align: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  white-space: nowrap;
 }
 
 .aboutMeHead::before {
@@ -18,6 +25,12 @@
 
 .aboutMeHead::after {
   content: '';
+  display: block;
+  position: relative;
+  width: 300px;
+  height: 1px;
+  margin-left: 20px;
+  background-color: #000;
 }
 
 .inner {
@@ -32,6 +45,10 @@
 
 .aboutMeInfo p {
   margin-bottom: 20px;
+}
+
+.skillsListParagraph {
+  opacity: 0;
 }
 
 .skillsList {

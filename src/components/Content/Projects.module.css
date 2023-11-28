@@ -1,0 +1,135 @@
+.projectsWrapper {
+  padding: 100px 0;
+  max-width: 1000px;
+  margin: 0px auto;
+}
+
+.projectsHead {
+  display: flex;
+  margin: 10px 0 40px 0;
+  -webkit-box-align: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  white-space: nowrap;
+}
+
+.projectsHead::before {
+  counter-increment: section 3;
+  content: '0' counter(section) '.';
+  margin-right: 10px;
+}
+
+.projectsHead::after {
+  content: '';
+  display: block;
+  position: relative;
+  width: 300px;
+  height: 1px;
+  margin-left: 20px;
+  background-color: #000;
+}
+
+.styledProjectGrid {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.styledProject {
+  margin-bottom: 100px;
+  position: relative;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(12, 1fr);
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.styledProject:nth-of-type(2n + 1) .projectContent {
+  grid-column: 7/-1;
+  text-align: right;
+}
+.styledProject .projectContent {
+  position: relative;
+  grid-area: 1/1/-1/7;
+}
+
+.projectOverline {
+  margin: 10px 0px;
+  color: var(--green);
+  /* font-family: var(--font-mono); */
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.projectTitle {
+  margin: 0px 0px 20px;
+}
+
+.projectDescription {
+  box-shadow: 0 10px 30px -15px #000;
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  position: relative;
+  z-index: 2;
+  padding: 25px;
+  border-radius: 4px;
+  background-color: #ccc;
+  color: #000;
+  font-size: 18px;
+}
+
+.styledProject:nth-of-type(2n + 1) .projectTechList {
+  -webkit-box-pack: end;
+  justify-content: flex-end;
+}
+
+.styledProject .projectTechList {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 2;
+  margin: 25px 0px 10px;
+  padding: 0px;
+  list-style: none;
+}
+
+.styledProject .projectTechList li {
+  margin: 0px 0px 5px 20px;
+}
+
+.feather {
+  width: 20px;
+  height: 20px;
+  fill: none;
+}
+
+.styledProject:nth-of-type(2n + 1) .projectImage {
+  grid-column: 1/8;
+}
+
+.styledProject .projectImage {
+  box-shadow: 0 10px 30px -15px #ccc;
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  grid-area: 1 / 6 / -1 / -1;
+  position: relative;
+  z-index: 1;
+}
+
+.imageWrapper {
+  width: 100%;
+  max-width: 100%;
+  vertical-align: middle;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  /* flex-shrink: 0; */
+  width: 700px;
+}
+
+.imageWrapper img {
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+  /* opacity: 0; */
+}
