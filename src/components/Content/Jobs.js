@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import JobDetails from './JobDetails';
+import JobDetails from './getJobContent';
 import styles from './Jobs.module.css';
 
 const Jobs = () => {

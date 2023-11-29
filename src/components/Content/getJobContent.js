@@ -1,8 +1,8 @@
 import React from 'react';
 import styles from './Jobs.module.css';
 
-const JobDetails = ({ jobName, isActive }) => {
-  const getJobContent = (name) => {
+const getJobContent = ({ jobName, isActive }) => {
+  const setJobContent = (name) => {
     switch (name) {
       case 'Fraunhofer-Institute':
         return (
@@ -110,9 +110,9 @@ const JobDetails = ({ jobName, isActive }) => {
 
   return (
     <div role='tabpanel' className={`${styles.tabPanel} ${!isActive ? styles.hide : ''}`}>
-      {getJobContent(jobName)}
+      {setJobContent(jobName)}
     </div>
   );
 };
 
-export default JobDetails;
+export default getJobContent;
