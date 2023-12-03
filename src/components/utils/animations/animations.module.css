@@ -30,6 +30,38 @@
   animation: revealOnScroll 1s ease-out forwards;
 }
 
+/* fly in sideways from right*/
+@keyframes revealOnScrollFromRightSide {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.revealOnScrollFromRightSide {
+  animation: revealOnScrollFromRightSide 1s ease-out forwards;
+}
+
+/* fly in sideways from left*/
+@keyframes revealOnScrollFromLeftSide {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.revealOnScrollFromLeftSide {
+  animation: revealOnScrollFromLeftSide 1s ease-out forwards;
+}
+
 /* Hero reveal on load */
 @keyframes revealFromBottomToTop {
   from {

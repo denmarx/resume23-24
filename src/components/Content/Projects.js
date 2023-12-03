@@ -3,13 +3,18 @@ import enzyme from '../../assets/enzyme.JPG';
 import bfs from '../../assets/bfs.JPG';
 import memento from '../../assets/memento.jpg';
 import v1_website from '../../assets/v1_website.JPG';
+import useRevealOnScroll from '../utils/js/useRevealOnScroll';
+
 const Projects = () => {
+  const addRef = useRevealOnScroll();
   return (
     <section id='projects' className={styles.projectWrapper}>
-      <h2 className={styles.projectsHead}>Some Things I've build</h2>
+      <h2 className={styles.projectsHead} ref={addRef(0.3)}>
+        Some Things I've build
+      </h2>
       <ul className={styles.styledProjectGrid}>
-        <li className={styles.styledProject}>
-          <div className={styles.projectContent}>
+        <li className={styles.styledProject} ref={addRef(0.5)}>
+          <div className={styles.projectContent} data-animation-type='slideInFromRight' ref={addRef(0.9)}>
             <div>
               <p className={styles.projectOverline}>Featured Project</p>
               <h3 className={styles.projectTitle}>
@@ -64,7 +69,7 @@ const Projects = () => {
               </div>
             </div>
           </div>
-          <div className={styles.projectImage}>
+          <div className={styles.projectImage} data-animation-type='slideInFromLeft' ref={addRef(0.5)}>
             <a href='/' rel='noopener noreferrer' target='_blank'>
               <div className={styles.imageWrapper}>
                 <img aria-hidden='true' data-placeholder-image='' decoding='async' src={enzyme} alt=''></img>

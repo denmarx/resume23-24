@@ -12,12 +12,15 @@
   position: relative;
   width: 100%;
   white-space: nowrap;
+  color: var(--lightest-slate);
+  opacity: 0;
 }
 
 .projectsHead::before {
   counter-increment: section 3;
   content: '0' counter(section) '.';
   margin-right: 10px;
+  color: var(--green);
 }
 
 .projectsHead::after {
@@ -27,7 +30,7 @@
   width: 300px;
   height: 1px;
   margin-left: 20px;
-  background-color: #000;
+  background-color: var(--lightest-navy);
 }
 
 .styledProjectGrid {
@@ -44,6 +47,11 @@
   grid-template-columns: repeat(12, 1fr);
   -webkit-box-align: center;
   align-items: center;
+  opacity: 0;
+}
+.styledProject .projectContent {
+  opacity: 0;
+  z-index: 2;
 }
 
 .styledProject:nth-of-type(2n + 1) .projectContent {
@@ -114,6 +122,7 @@
   grid-area: 1 / 6 / -1 / -1;
   position: relative;
   z-index: 1;
+  opacity: 0;
 }
 
 .imageWrapper {

@@ -4,6 +4,7 @@ import animations from '../animations/animations.module.css';
 // old version
 const useRevealOnScroll = () => {
   const elementsRef = useRef([]);
+
   useEffect(() => {
     const handleScroll = () => {
       const fromTop = window.scrollY;
@@ -12,7 +13,15 @@ const useRevealOnScroll = () => {
       elementsRef.current.forEach((el) => {
         if (el && fromTop + viewportHeight > el.offsetTop) {
           el.style.animationDelay = `${el.dataset.delay}s`;
-          el.classList.add(animations.revealOnScroll);
+
+          const animationType = el.dataset.animationType;
+          if (animationType === 'slideInFromRight') {
+            el.classList.add(animations.revealOnScrollFromRightSide);
+          } else if (animationType === 'slideInFromLeft') {
+            el.classList.add(animations.revealOnScrollFromLeftSide);
+          } else {
+            el.classList.add(animations.revealOnScroll);
+          }
         }
       });
     };

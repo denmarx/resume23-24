@@ -1,11 +1,7 @@
 .aboutWrapper {
   padding-bottom: 100px;
-  max-width: 900px;
+  max-width: 1200px;
   margin: 0px auto;
-}
-
-.aboutWrapper h2 {
-  margin: 10px 0 40px 0;
 }
 
 .aboutMeHead {
@@ -17,12 +13,14 @@
   position: relative;
   width: 100%;
   white-space: nowrap;
+  color: var(--lightest-slate);
 }
 
 .aboutMeHead::before {
   counter-increment: section 1;
   content: '0' counter(section) '.';
   margin-right: 10px;
+  color: var(--green);
 }
 
 .aboutMeHead::after {
@@ -32,7 +30,7 @@
   width: 300px;
   height: 1px;
   margin-left: 20px;
-  background-color: #000;
+  background-color: var(--lightest-navy);
 }
 
 .inner {
@@ -63,8 +61,7 @@
 
 .skillsList li::before {
   content: '▹';
-  /* position: absolute;
-  left: 0px; */
+  color: var(--green);
 }
 
 .imageWrapper {
