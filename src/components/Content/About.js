@@ -35,7 +35,6 @@ const About = () => {
               <li>React</li>
               <li>Matter.js</li>
               <li>Node.js</li>
-              <li>Express.js</li>
             </ul>
           </div>
         </div>
