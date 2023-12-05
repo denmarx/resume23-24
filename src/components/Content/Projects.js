@@ -19,13 +19,14 @@ const Projects = () => {
               <p className={styles.projectOverline}>Featured Project</p>
               <h3 className={styles.projectTitle}>
                 <a href='/' rel='noopener noreferrer' target='_blank'>
-                  Enzyme Digestion
+                  Molecular Digestion Simulator
                 </a>
               </h3>
               <div className={styles.projectDescription}>
                 <p>
-                  An education tool simulating the enzymatic processes of nutrient digestion. An education tool
-                  simulating the enzymatic processes of nutrient digestion.
+                  Explore the intricacies of nutrient digestion at a molecular level with this educational simulator.
+                  Developed using the Matter.js physics engine and built on React, this tool provides a detailed and
+                  interactive approach to learning about the digestive process.
                 </p>
               </div>
               <ul className={styles.projectTechList}>
@@ -92,17 +93,21 @@ const Projects = () => {
               <p className={styles.projectOverline}>Featured Project</p>
               <h3 className={styles.projectTitle}>
                 <a href='/' rel='noopener noreferrer' target='_blank'>
-                  Enzyme Digestion
+                  Ikigai: Discover Your Ideal Career
                 </a>
               </h3>
               <div className={styles.projectDescription}>
-                <p>An education tool simulating the enzymatic processes of nutrient digestion.</p>
+                <p>
+                  <span>Ikigai</span> is an innovative job-finding simulator that blends the art of storytelling with
+                  the power of decision-making, designed to guide users through the enthralling journey of career
+                  exploration. Crafted with the versatile Monogatari visual novel engine, this interactive experience is
+                  built using JavaScript, HTML, and CSS.
+                </p>
               </div>
               <ul className={styles.projectTechList}>
                 <li>JavaScript</li>
                 <li>CSS</li>
-                <li>React</li>
-                <li>Matter.js</li>
+                <li>Monogatari</li>
               </ul>
               <div className={styles.projectLinks}>
                 <a
@@ -162,17 +167,19 @@ const Projects = () => {
               <p className={styles.projectOverline}>Featured Project</p>
               <h3 className={styles.projectTitle}>
                 <a href='/' rel='noopener noreferrer' target='_blank'>
-                  Enzyme Digestion
+                  Memento Mori: A Philosophical RPG
                 </a>
               </h3>
               <div className={styles.projectDescription}>
-                <p>An education tool simulating the enzymatic processes of nutrient digestion.</p>
+                <p>
+                  Discover the profound insights of "Memento Mori", a unique game created with RPGMaker, now available
+                  as an Android app. This game delves into the timeless theme of 'remembering our mortality', blending
+                  philosophical concepts with engaging RPG gameplay.
+                </p>
               </div>
               <ul className={styles.projectTechList}>
                 <li>JavaScript</li>
-                <li>CSS</li>
-                <li>React</li>
-                <li>Matter.js</li>
+                <li>RPG Maker MV</li>
               </ul>
               <div className={styles.projectLinks}>
                 <a
@@ -232,17 +239,19 @@ const Projects = () => {
               <p className={styles.projectOverline}>Featured Project</p>
               <h3 className={styles.projectTitle}>
                 <a href='/' rel='noopener noreferrer' target='_blank'>
-                  Enzyme Digestion
+                  Vanilla Web Design
                 </a>
               </h3>
               <div className={styles.projectDescription}>
-                <p>An education tool simulating the enzymatic processes of nutrient digestion.</p>
+                <p>
+                  This website exemplifies the efficient and effective use of fundamental web technologies: vanilla
+                  JavaScript, CSS, and HTML. It's a straightforward showcase of how these core tools can create a
+                  functional and well-designed web experience.
+                </p>
               </div>
               <ul className={styles.projectTechList}>
                 <li>JavaScript</li>
                 <li>CSS</li>
-                <li>React</li>
-                <li>Matter.js</li>
               </ul>
               <div className={styles.projectLinks}>
                 <a
