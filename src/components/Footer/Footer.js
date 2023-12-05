@@ -39,8 +39,14 @@ const Footer = () => {
             <li>
               <a href='/' target='_blanks' rel='noopener'>
                 <span>03</span>
-                <strong>YouTube</strong>
+                <strong>LinkedIn</strong>
               </a>
+              <li>
+                <a href='/' target='_blanks' rel='noopener'>
+                  <span>04</span>
+                  <strong>CodePen</strong>
+                </a>
+              </li>
             </li>
           </ul>
         </nav>

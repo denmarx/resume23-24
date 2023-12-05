@@ -11,17 +11,9 @@ const useRevealOnScroll = () => {
       const viewportHeight = window.innerHeight;
 
       elementsRef.current.forEach((el) => {
-        if (el && fromTop + viewportHeight > el.offsetTop) {
+        if (el && fromTop + viewportHeight > el.offsetTop + 35) {
           el.style.animationDelay = `${el.dataset.delay}s`;
-
-          const animationType = el.dataset.animationType;
-          if (animationType === 'slideInFromRight') {
-            el.classList.add(animations.revealOnScrollFromRightSide);
-          } else if (animationType === 'slideInFromLeft') {
-            el.classList.add(animations.revealOnScrollFromLeftSide);
-          } else {
-            el.classList.add(animations.revealOnScroll);
-          }
+          el.classList.add(animations.revealOnScroll);
         }
       });
     };

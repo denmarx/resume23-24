@@ -38,9 +38,13 @@ const Jobs = () => {
         <div role='tablist' className={styles.tabList}>
           {jobNames.map((jobName) => (
             <button
+              className={styles.tablistButton}
               key={jobName}
               onClick={() => setActiveJob(jobName)}
-              style={{ color: activeJob === jobName ? 'var(--green)' : 'var(--slate)' }}
+              style={{
+                color: activeJob === jobName ? 'var(--green)' : 'var(--slate)',
+                backgroundColor: activeJob === jobName ? 'var(--light-navy)' : 'var(--navy)',
+              }}
             >
               <span>{jobName}</span>
             </button>

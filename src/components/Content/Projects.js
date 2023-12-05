@@ -13,8 +13,8 @@ const Projects = () => {
         Some Things I've build
       </h2>
       <ul className={styles.styledProjectGrid}>
-        <li className={styles.styledProject} ref={addRef(0.5)}>
-          <div className={styles.projectContent} data-animation-type='slideInFromRight' ref={addRef(0.9)}>
+        <li className={styles.styledProject} ref={addRef(0.6)}>
+          <div className={styles.projectContent}>
             <div>
               <p className={styles.projectOverline}>Featured Project</p>
               <h3 className={styles.projectTitle}>
@@ -23,7 +23,10 @@ const Projects = () => {
                 </a>
               </h3>
               <div className={styles.projectDescription}>
-                <p>An education tool simulating the enzymatic processes of nutrient digestion.</p>
+                <p>
+                  An education tool simulating the enzymatic processes of nutrient digestion. An education tool
+                  simulating the enzymatic processes of nutrient digestion.
+                </p>
               </div>
               <ul className={styles.projectTechList}>
                 <li>JavaScript</li>
@@ -32,7 +35,13 @@ const Projects = () => {
                 <li>Matter.js</li>
               </ul>
               <div className={styles.projectLinks}>
-                <a href='/' aria-label='GitHub Link' rel='noopener noreferrer' target='_blank'>
+                <a
+                  className={styles.githubLink}
+                  href='/'
+                  aria-label='GitHub Link'
+                  rel='noopener noreferrer'
+                  target='_blank'
+                >
                   <svg
                     xmlns='http://www.w3.org/2000/svg'
                     role='img'
@@ -69,7 +78,7 @@ const Projects = () => {
               </div>
             </div>
           </div>
-          <div className={styles.projectImage} data-animation-type='slideInFromLeft' ref={addRef(0.5)}>
+          <div className={styles.projectImage}>
             <a href='/' rel='noopener noreferrer' target='_blank'>
               <div className={styles.imageWrapper}>
                 <img aria-hidden='true' data-placeholder-image='' decoding='async' src={enzyme} alt=''></img>
@@ -77,7 +86,7 @@ const Projects = () => {
             </a>
           </div>
         </li>
-        <li className={styles.styledProject}>
+        <li className={styles.styledProject} ref={addRef(0.6)}>
           <div className={styles.projectContent}>
             <div>
               <p className={styles.projectOverline}>Featured Project</p>
@@ -96,7 +105,13 @@ const Projects = () => {
                 <li>Matter.js</li>
               </ul>
               <div className={styles.projectLinks}>
-                <a href='/' aria-label='GitHub Link' rel='noopener noreferrer' target='_blank'>
+                <a
+                  className={styles.githubLink}
+                  href='/'
+                  aria-label='GitHub Link'
+                  rel='noopener noreferrer'
+                  target='_blank'
+                >
                   <svg
                     xmlns='http://www.w3.org/2000/svg'
                     role='img'
@@ -141,7 +156,7 @@ const Projects = () => {
             </a>
           </div>
         </li>
-        <li className={styles.styledProject}>
+        <li className={styles.styledProject} ref={addRef(0.6)}>
           <div className={styles.projectContent}>
             <div>
               <p className={styles.projectOverline}>Featured Project</p>
@@ -160,7 +175,13 @@ const Projects = () => {
                 <li>Matter.js</li>
               </ul>
               <div className={styles.projectLinks}>
-                <a href='/' aria-label='GitHub Link' rel='noopener noreferrer' target='_blank'>
+                <a
+                  className={styles.githubLink}
+                  href='/'
+                  aria-label='GitHub Link'
+                  rel='noopener noreferrer'
+                  target='_blank'
+                >
                   <svg
                     xmlns='http://www.w3.org/2000/svg'
                     role='img'
@@ -205,7 +226,7 @@ const Projects = () => {
             </a>
           </div>
         </li>
-        <li className={styles.styledProject}>
+        <li className={styles.styledProject} ref={addRef(0.6)}>
           <div className={styles.projectContent}>
             <div>
               <p className={styles.projectOverline}>Featured Project</p>
@@ -224,7 +245,13 @@ const Projects = () => {
                 <li>Matter.js</li>
               </ul>
               <div className={styles.projectLinks}>
-                <a href='/' aria-label='GitHub Link' rel='noopener noreferrer' target='_blank'>
+                <a
+                  className={styles.githubLink}
+                  href='/'
+                  aria-label='GitHub Link'
+                  rel='noopener noreferrer'
+                  target='_blank'
+                >
                   <svg
                     xmlns='http://www.w3.org/2000/svg'
                     role='img'
