@@ -1,5 +1,6 @@
 import './styles/App.css';
 import Menu from './components/Menu/Menu';
+import Nav from './components/Nav/Nav';
 import Footer from './components/Footer/Footer';
 import Hero from './components/Hero/Hero';
 import About from './components/Content/About';
@@ -9,7 +10,8 @@ import Projects from './components/Content/Projects';
 const App = () => {
   return (
     <div id='App-container'>
-      <Menu />
+      {/* <Menu /> */}
+      <Nav />
       <main className='main-content fillHeight'>
         <Hero />
         <About />

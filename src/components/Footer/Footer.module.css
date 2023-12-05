@@ -21,7 +21,7 @@
 
 .infoRight {
   position: fixed;
-  right: 4rem;
+  right: 2.5rem;
   bottom: 3rem;
 }
 
@@ -60,12 +60,17 @@
 .social a {
   text-decoration: none;
   color: var(--light-slate);
-  font-size: 0.9rem;
+  font-size: 1rem;
+}
+
+.social a:hover {
+  color: var(--green);
+  transition: 0.7s ease-in-out;
 }
 
 .social span {
   margin-right: 10px;
   letter-spacing: -0.03rem;
-  font-size: 0.7rem;
+  font-size: 0.9rem;
   color: var(--green);
 }

@@ -16,7 +16,7 @@ const Footer = () => {
           <ul className={styles.location}>
             <li>Bremen, Germany</li>
             <li>
-              <strong>info@email.com</strong>
+              <strong>dennis.marx93@gmail.com</strong>
             </li>
           </ul>
         </div>
@@ -25,24 +25,24 @@ const Footer = () => {
         <nav className={styles.social}>
           <ul>
             <li>
-              <a href='/' target='_blanks' rel='noopener'>
+              <a href='https://github.com/denmarx' target='_blank' rel='noopener noreferrer'>
                 <span>01</span>
                 <strong>GitHub</strong>
               </a>
             </li>
             <li>
-              <a href='/' target='_blanks' rel='noopener'>
+              <a href='https://www.researchgate.net/profile/Dennis-Marx' target='_blank' rel='noopener noreferrer'>
                 <span>02</span>
                 <strong>ResearchGate</strong>
               </a>
             </li>
             <li>
-              <a href='/' target='_blanks' rel='noopener'>
+              <a href='/' target='_blank' rel='noopener'>
                 <span>03</span>
                 <strong>LinkedIn</strong>
               </a>
               <li>
-                <a href='/' target='_blanks' rel='noopener'>
+                <a href='https://codepen.io/denmarx' target='_blank' rel='noopener noreferrer'>
                   <span>04</span>
                   <strong>CodePen</strong>
                 </a>
