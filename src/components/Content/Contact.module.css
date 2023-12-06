@@ -1,0 +1,52 @@
+.contactWrapper {
+  max-width: 600px;
+  margin: 0px auto;
+  padding: 0px 0px 100px;
+  text-align: center;
+  opacity: 0;
+}
+
+.numberedHeading {
+  display: block;
+  margin-bottom: 20px;
+  color: var(--green);
+  font-family: var(--font-mono);
+  font-size: var(--fz-md);
+  font-weight: 400;
+  -webkit-box-align: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  white-space: nowrap;
+  color: var(--green);
+}
+
+.numberedHeading::before {
+  counter-increment: section 4;
+  content: '0' counter(section) '.';
+  margin-right: 10px;
+  color: var(--green);
+}
+
+.title {
+  letter-spacing: 0.02em;
+  margin: 0px;
+  font-size: clamp(30px, 4vw, 70px);
+  color: var(--lightest-slate);
+  padding-bottom: 35px;
+}
+
+.emailLink {
+  display: inline-block;
+  color: var(--green);
+  background-color: transparent;
+  border: 1px solid var(--green);
+  border-radius: var(--border-radius);
+  padding: 1.25rem 1.75rem;
+  font-size: var(--fz-lg);
+  font-family: var(--font-mono);
+  line-height: 1;
+  text-decoration: none;
+  transition: var(--transition);
+  margin-top: 50px;
+}
