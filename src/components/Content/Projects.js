@@ -238,7 +238,7 @@ const Projects = () => {
             <div>
               <p className={styles.projectOverline}>Featured Project</p>
               <h3 className={styles.projectTitle}>
-                <a href='/' rel='noopener noreferrer' target='_blank'>
+                <a href='https://www.dennis-marx.de' rel='noopener noreferrer' target='_blank'>
                   Vanilla Web Design
                 </a>
               </h3>

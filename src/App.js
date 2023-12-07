@@ -1,5 +1,5 @@
 import './styles/App.css';
-import Menu from './components/Menu/Menu';
+// import Menu from './components/Menu/Menu';
 import Nav from './components/Nav/Nav';
 import Footer from './components/Footer/Footer';
 import Hero from './components/Hero/Hero';

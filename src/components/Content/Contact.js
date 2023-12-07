@@ -14,6 +14,12 @@ const Contact = () => {
       <a className={styles.emailLink} href='mailto:dennis.marx93@gmail.com' rel='noopener noreferrer' target='_blank'>
         Reach Out
       </a>
+      <p className={styles.credit}>
+        Design inspired by{' '}
+        <a className={styles.creditLink} href='https://brittanychiang.com/' rel='noopener noreferrer' target='_blank'>
+          Brittany Chiang
+        </a>
+      </p>
     </section>
   );
 };
