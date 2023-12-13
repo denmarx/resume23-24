@@ -19,10 +19,18 @@ const Jobs = () => {
     const activeIndex = jobNames.indexOf(activeJob);
     // Ensure that activeIndex is valid
     if (activeIndex !== -1) {
-      const translateY = `calc(${activeIndex} * 42px)`;
-      setHighlightStyle({
-        transform: `translateY(${translateY})`,
-      });
+      // Check if window width is less than or equal to 768px
+      const isHorizontal = window.innerWidth <= 768;
+
+      // Calculate translate value based on orientation
+      const translateValue = isHorizontal
+        ? `calc(${activeIndex} * 156.3px)` // Use 156.3px for horizontal
+        : `calc(${activeIndex} * 42px)`; // Use 42px for vertical
+
+      // Determine the correct transform property based on orientation
+      const transform = isHorizontal ? `translateX(${translateValue})` : `translateY(${translateValue})`;
+
+      setHighlightStyle({ transform });
     }
   }, [activeJob, jobNames.length]);
 

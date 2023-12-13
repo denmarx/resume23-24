@@ -145,3 +145,28 @@
 .hide {
   display: none;
 }
+
+@media (max-width: 768px) {
+  .jobsWrapper {
+    padding: 100px 0;
+    margin: 0px 5%;
+  }
+
+  .inner {
+    flex-direction: column;
+  }
+
+  .tabHighlightBar {
+    width: 100%;
+    height: 2px;
+  }
+
+  .tabHighlight {
+    width: 172.8047px;
+    height: 2px;
+  }
+
+  .tabList {
+    flex-direction: row;
+  }
+}

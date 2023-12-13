@@ -75,3 +75,17 @@
   object-fit: cover;
   opacity: 0;
 }
+
+@media (max-width: 768px) {
+  .aboutWrapper {
+    margin: 0px 5%;
+  }
+
+  .inner {
+    flex-direction: column;
+  }
+
+  .imageWrapper img {
+    padding-top: 10%;
+  }
+}

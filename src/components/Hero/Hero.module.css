@@ -1,9 +1,9 @@
 .titleContainer {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   flex-direction: column;
   min-height: 100vh;
-  padding: 0px 15%;
+  padding: 5% 15% 0px;
 }
 
 .title {
@@ -32,4 +32,10 @@
 .title p {
   margin-top: 1.2em;
   max-width: 680px;
+}
+
+@media (max-width: 768px) {
+  .titleContainer {
+    padding: 5% 5% 0px;
+  }
 }
