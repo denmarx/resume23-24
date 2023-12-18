@@ -15,10 +15,10 @@ const App = () => {
       <Nav />
       <main className='main-content fillHeight'>
         <Hero />
-        <About />
-        <Jobs />
-        <Projects />
-        <Contact />
+        {/* <About /> */}
+        {/* <Jobs /> */}
+        {/* <Projects /> */}
+        {/* <Contact /> */}
       </main>
       <Footer />
     </div>

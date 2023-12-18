@@ -54,3 +54,88 @@
   color: var(--green);
   transition: 0.3s ease-in-out;
 }
+
+.menu {
+  display: none;
+}
+
+.hamburgerButton .hambox {
+  display: inline-block;
+  position: relative;
+  width: 30px;
+  height: 24px;
+}
+
+.hamburgerButton .hamboxInner {
+  position: absolute;
+  top: 50%;
+  right: 0px;
+  width: var(--hamburger-width);
+  height: 2px;
+  border-radius: var(--border-radius);
+  background-color: var(--green);
+  transition-duration: 0.22s;
+  transition-property: transform;
+  transition-delay: 0s;
+  transform: rotate(0deg);
+  transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.hamburgerButton .hamboxInner::before {
+  width: 120%;
+  top: -10px;
+  opacity: 1;
+  transition: var(--ham-before);
+}
+
+.hamburgerButton .hamboxInner::after {
+  width: 80%;
+  bottom: -10px;
+  transform: rotate(0deg);
+  transition: var(--ham-after);
+}
+
+.hamburgerButton .hamboxInner::before,
+.hamboxInner::after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: auto;
+  right: 0px;
+  height: 2px;
+  border-radius: 4px;
+  background-color: var(--green);
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .styledHeader {
+    padding: 0px 25px;
+  }
+  .navbar {
+    display: none;
+  }
+  .menu {
+    display: block;
+  }
+  .hamburgerButton {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+    margin-right: -15px;
+    padding: 15px;
+    border: 0px;
+    background-color: transparent;
+    color: inherit;
+    text-transform: none;
+    transition-timing-function: linear;
+    transition-duration: 0.15s;
+    transition-property: opacity, filter;
+    cursor: pointer;
+    border-radius: 0px;
+  }
+}

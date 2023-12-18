@@ -30,11 +30,8 @@ const Hero = () => {
           style={{ transform: `translateY(${transformValue}px) ` }}
         >
           <p>
-            I'm a web developer with a passion for crafting engaging and efficient digital experiences. At present, I'm
-            dedicated to developing accessible, user-centric websites, leveraging my skills in HTML, CSS, JavaScript,
-            and a growing proficiency in frameworks like React.<br></br> I am keen on joining a forward-thinking team
-            where I can contribute to impactful projects and continue my professional growth in the dynamic field of web
-            development.
+            I'm a software engineer and web developer passionate about creating engaging digital experiences. I'm eager
+            to join a forward-thinking team to contribute to impactful projects and grow in web development.
           </p>
         </div>
         {/* <section className={` ${stylesAnimation.imageReveal} ${styles.titleImage} `}></section> */}

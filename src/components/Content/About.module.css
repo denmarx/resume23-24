@@ -76,6 +76,10 @@
   opacity: 0;
 }
 
+/* Extra extra large devices (large laptops and desktops, until 1366px and lower) */
+@media (max-width: 1366px) {
+}
+
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   .aboutWrapper {

@@ -22,6 +22,15 @@ const Nav = () => {
             </li>
           </ol>
         </div>
+        <div className={styles.menu}>
+          <div>
+            <button className={styles.hamburgerButton}>
+              <div className={styles.hambox}>
+                <div className={styles.hamboxInner}></div>
+              </div>
+            </button>
+          </div>
+        </div>
       </nav>
     </header>
   );

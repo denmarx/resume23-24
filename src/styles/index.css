@@ -4,6 +4,12 @@
   box-sizing: inherit;
 }
 
+html {
+  width: 100%;
+  box-sizing: border-box;
+
+  scroll-behavior: smooth;
+}
 :root {
   --dark-navy: #020c1b;
   --navy: #0a192f;
