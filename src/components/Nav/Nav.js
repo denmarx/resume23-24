@@ -1,7 +1,12 @@
+import React, { useState } from 'react';
 import styles from './Nav.module.css';
 import shot from '../../assets/shot _small.webp';
 
 const Nav = () => {
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const toggleSidebar = () => {
+    setIsSidebarOpen(!isSidebarOpen);
+  };
   return (
     <header className={styles.styledHeader}>
       <nav className={styles.navContainer}>
@@ -24,11 +29,36 @@ const Nav = () => {
         </div>
         <div className={styles.menu}>
           <div>
-            <button className={styles.hamburgerButton}>
+            <button className={styles.hamburgerButton} onClick={toggleSidebar}>
               <div className={styles.hambox}>
                 <div className={styles.hamboxInner}></div>
               </div>
             </button>
+            <aside
+              aria-hidden={!isSidebarOpen}
+              tabIndex={isSidebarOpen ? '0' : '-1'}
+              className={`${styles.sidebar} ${isSidebarOpen ? styles.sidebarOpen : ''}`}
+            >
+              <nav>
+                <ol>
+                  <li>
+                    <a href='#aboutSection'>About</a>
+                  </li>
+                  <li>
+                    <a href='#jobs'>Experience</a>
+                  </li>
+                  <li>
+                    <a href='#projects'>Projects</a>
+                  </li>
+                  <li>
+                    <a href='#contact'>Contact</a>
+                  </li>
+                </ol>
+                <a href='/resume.pdf' className={styles.resumeLink}>
+                  Resume
+                </a>
+              </nav>
+            </aside>
           </div>
         </div>
       </nav>
