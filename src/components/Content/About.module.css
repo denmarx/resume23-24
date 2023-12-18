@@ -66,7 +66,7 @@
 
 .imageWrapper {
   flex-shrink: 0;
-  width: 70%;
+  width: 30%;
 }
 
 .imageWrapper img {
@@ -105,5 +105,8 @@
 @media only screen and (max-width: 600px) {
   .aboutMeInfo {
     font-size: var(--fz-md);
+  }
+  .imageWrapper {
+    width: 70%;
   }
 }

@@ -35,35 +35,42 @@
 
 .inner {
   display: flex;
-  /* align-items: center; */
+  align-items: center;
   justify-content: space-between;
-  /* gap: 20px; */
+  gap: 20px;
   min-height: 340px;
   opacity: 0;
 }
 
 .tabList {
   position: relative;
-  display: flex;
-  flex-direction: column;
+  z-index: 3;
   width: max-content;
   padding: 0px;
   margin: 0px;
+  list-style: none;
 }
 
 .tabList button {
   text-decoration: none;
-  background-color: transparent;
-  border: 0;
+  text-decoration-skip-ink: auto;
   position: relative;
+  transition: var(--transition);
   display: flex;
-  text-align: left;
-  align-items: center;
   -webkit-box-align: center;
-  height: 42px;
-  /* width: 100%; */
+  align-items: center;
+  width: 100%;
+  height: var(--tab-height);
+  padding: 0px 20px 2px;
+  border-left: 2px solid var(--lightest-navy);
+  background-color: transparent;
+  color: var(--green);
+  font-family: var(--font-mono);
+  font-size: var(--fz-xs);
+  text-align: left;
   white-space: nowrap;
-  padding: 0px 20px;
+  border: 0px;
+  border-radius: 0px;
 }
 
 .tabList button:hover {
@@ -77,10 +84,20 @@
 }
 
 .tabHighlightBar {
-  position: relative;
+  /* position: relative;
   height: 168px;
   background-color: var(--lightest-navy);
+  width: 2px; */
+  /* position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 10;
   width: 2px;
+  height: var(--tab-height);
+  border-radius: var(--border-radius);
+  background: var(--green);
+  transform: translateY(calc(2 * var(--tab-height)));
+  transition: transform 0.25s cubic-bezier(0.645, 0.045, 0.355, 1); */
 }
 
 .tabHighlight {
@@ -168,5 +185,45 @@
 
   .tabList {
     flex-direction: row;
+  }
+}
+
+@media (max-width: 600px) {
+  .tabList {
+    display: flex;
+    overflow-x: auto;
+    margin-bottom: 30px;
+  }
+  .tabList button {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    min-width: 173px;
+    padding: 0px 15px;
+    border-left: 0px;
+    border-bottom: 2px solid var(--lightest-navy);
+    text-align: center;
+  }
+  .tabHighlight {
+    top: auto;
+    bottom: 0px;
+    width: 100%;
+    max-width: var(--tab-width);
+    height: 2px;
+
+    transform: translateX(calc(2 * var(--tab-width)));
+  }
+}
+
+@media (max-width: 480px) {
+  .tabList {
+    width: calc(100% + 50px);
+    padding-left: 25px;
+    margin-left: -25px;
+  }
+  .tabHighlight {
+    margin-left: 25px;
   }
 }

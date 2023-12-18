@@ -24,7 +24,7 @@ const Jobs = () => {
 
       // Calculate translate value based on orientation
       const translateValue = isHorizontal
-        ? `calc(${activeIndex} * 156.3px)` // Use 156.3px for horizontal
+        ? `calc(${activeIndex} * 172.953px)` // Use 156.3px for horizontal
         : `calc(${activeIndex} * 42px)`; // Use 42px for vertical
 
       // Determine the correct transform property based on orientation
@@ -40,9 +40,8 @@ const Jobs = () => {
         Where I've Worked
       </h2>
       <div className={styles.inner} ref={addRef(0.8)}>
-        <div className={styles.tabHighlightBar}>
-          <div className={styles.tabHighlight} style={highlightStyle} />
-        </div>
+        {/* <div className={styles.tabHighlightBar}>
+        </div> */}
         <div role='tablist' className={styles.tabList}>
           {jobNames.map((jobName) => (
             <button
@@ -57,6 +56,7 @@ const Jobs = () => {
               <span>{jobName}</span>
             </button>
           ))}
+          <div className={styles.tabHighlight} style={highlightStyle} />
         </div>
 
         <div className={styles.jobPanel}>
