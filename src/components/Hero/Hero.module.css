@@ -34,6 +34,22 @@
   max-width: 680px;
 }
 
+/* Extra large devices (large laptops and desktops, until 1200px and lower) */
+@media (max-width: 1200px) {
+  .titleContainer {
+    min-height: none;
+    height: 800px;
+  }
+}
+
+/* Large devices (laptops/desktops, until 992px and lower) */
+@media (max-width: 992px) {
+  .titleContainer {
+    min-height: 0px;
+    height: 800px;
+  }
+}
+
 @media (max-width: 768px) {
   .titleContainer {
     padding: 5% 5% 0px;

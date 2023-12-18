@@ -75,6 +75,33 @@
   color: var(--green);
 }
 
+/* Extra large devices (large laptops and desktops, until 1200px and lower) */
+@media (max-width: 1200px) {
+  .infoLeft {
+    margin-left: 0;
+    left: 0;
+    padding-left: 5%;
+    bottom: 1rem;
+  }
+
+  .infoRight {
+    bottom: 1rem;
+  }
+
+  .social {
+    left: 0;
+  }
+  .social ul {
+    display: flex;
+  }
+  .social a {
+    margin-right: 10px;
+  }
+  .social span {
+    margin-right: 5px;
+  }
+}
+
 @media (max-width: 768px) {
   .infoLeft {
     margin-left: 0;

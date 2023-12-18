@@ -76,6 +76,13 @@
   opacity: 0;
 }
 
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .aboutWrapper {
+  }
+}
+
+/* Medium devices (landscape tablets, 768px) */
 @media (max-width: 768px) {
   .aboutWrapper {
     margin: 0px 5%;
@@ -88,4 +95,8 @@
   .imageWrapper img {
     padding-top: 10%;
   }
+}
+
+/* Small devices (portrait tablets and large phones, 600px) */
+@media only screen and (max-width: 600px) {
 }
