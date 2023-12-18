@@ -13,3 +13,9 @@
 .fillHeight {
   padding: 0px -10px 0px 300px;
 }
+
+@media (max-width: 600px) {
+  main.fillHeight {
+    padding: 0px 25px;
+  }
+}

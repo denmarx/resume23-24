@@ -1,9 +1,13 @@
 .titleContainer {
   display: flex;
+  -webkit-box-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
   flex-direction: column;
+  align-items: flex-start;
   min-height: 100vh;
-  padding: 0% 15% 0px;
+  height: 100vh;
+  padding: 0px;
 }
 
 .title {
@@ -55,7 +59,6 @@
 /* Medium devices (landscape tablets, until 768px and lower) */
 @media (max-width: 768px) {
   .titleContainer {
-    padding: 5% 5% 0px;
   }
 }
 
@@ -66,10 +69,8 @@
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .titleContainer {
-    width: 100vw;
-    min-height: 100vh;
     height: auto;
-    padding: 5% 5% 0px;
+    padding-top: var(--nav-height);
   }
   .title h1 {
     margin: 0px 0px 30px 4px;

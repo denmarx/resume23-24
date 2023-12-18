@@ -42,19 +42,27 @@ const Nav = () => {
               <nav>
                 <ol>
                   <li>
-                    <a href='#aboutSection'>About</a>
+                    <a href='#aboutSection' onClick={toggleSidebar}>
+                      About
+                    </a>
                   </li>
                   <li>
-                    <a href='#jobs'>Experience</a>
+                    <a href='#jobs' onClick={toggleSidebar}>
+                      Experience
+                    </a>
                   </li>
                   <li>
-                    <a href='#projects'>Projects</a>
+                    <a href='#projects' onClick={toggleSidebar}>
+                      Projects
+                    </a>
                   </li>
                   <li>
-                    <a href='#contact'>Contact</a>
+                    <a href='#contact' onClick={toggleSidebar}>
+                      Contact
+                    </a>
                   </li>
                 </ol>
-                <a href='/resume.pdf' className={styles.resumeLink}>
+                <a href='/resume.pdf' onClick={toggleSidebar} className={styles.resumeLink}>
                   Resume
                 </a>
               </nav>

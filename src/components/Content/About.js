@@ -1,5 +1,5 @@
 import styles from './About.module.css';
-import shot from '../../assets/shot _small.webp';
+import shot from '../../assets/shot_cut.webp';
 import useRevealOnScroll from '../utils/js/useRevealOnScroll';
 
 const About = () => {
@@ -14,17 +14,13 @@ const About = () => {
           <div>
             <p>Hello there!</p>
             <p>
-              I am Dennis, a passionate and skilled Web Developer with a strong background in creating dynamic,
-              user-friendly websites. With my expertise in the latest web technologies and a keen eye for detail, I am
-              dedicated to delivering high-quality web solutions that meet your specific needs.
+              I'm Dennis, a software engineer with a background in science. I specialize in building dynamic, intuitive
+              digital products, with an approach that leverages precision, creativity and user experience.
             </p>
             <p>
-              If you're looking for a reliable, creative, and technically proficient developer to bring your web
-              projects to life, let's connect! I'm excited to discuss how my skills and experience can contribute to the
-              success of your next project.
-            </p>
-            <p>
-              Please feel free to reach out to me for any web development needs. Looking forward to working with you!
+              If you're looking for a reliable and technically proficient developer to bring your projects to life,
+              let's connect! I'm excited to discuss how my skills and experience can contribute to the success of your
+              next project.
             </p>
             <p className={styles.skillsListParagraph} ref={addRef(0.8)}>
               Here are a few technologies I've been working with recently:
@@ -35,6 +31,7 @@ const About = () => {
               <li>React</li>
               <li>Matter.js</li>
               <li>Node.js</li>
+              <li>Git</li>
             </ul>
           </div>
         </div>

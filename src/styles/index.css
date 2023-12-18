@@ -4,6 +4,12 @@
   box-sizing: inherit;
 }
 
+#root {
+  display: grid;
+  grid-template-rows: 1fr auto;
+  grid-template-columns: 100%;
+}
+
 html {
   width: 100%;
   box-sizing: border-box;

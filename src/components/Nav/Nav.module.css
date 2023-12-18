@@ -1,17 +1,42 @@
 .styledHeader {
   padding: 0 50px;
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  align-items: center;
+  position: fixed;
+  top: 0px;
+  z-index: 11;
+  width: 100%;
+  height: var(--nav-height);
+  background-color: rgba(10, 25, 47, 0.85);
+  backdrop-filter: blur(10px);
+  transition: var(--transition);
+  filter: none !important;
+  pointer-events: auto !important;
+  user-select: auto !important;
   box-shadow: 0 10px 30px -15px var(--dark-navy);
 }
 
 .navContainer {
   display: flex;
+  -webkit-box-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
   align-items: center;
+  position: relative;
+  width: 100%;
+  color: var(--lightest-slate);
+  font-family: var(--font-mono);
+  counter-reset: item 0;
+  z-index: 12;
 }
 
 .navbar {
-  position: relative;
-  padding: 1.5rem;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
 }
 
 .logo {

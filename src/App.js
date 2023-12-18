@@ -15,8 +15,8 @@ const App = () => {
       <Nav />
       <main className='main-content fillHeight'>
         <Hero />
-        {/* <About /> */}
-        {/* <Jobs /> */}
+        <About />
+        <Jobs />
         {/* <Projects /> */}
         {/* <Contact /> */}
       </main>
