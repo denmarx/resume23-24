@@ -1,12 +1,14 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import JobDetails from './getJobContent';
 import styles from './Jobs.module.css';
 import useRevealOnScroll from '../utils/js/useRevealOnScroll';
 
 const Jobs = () => {
   const addRef = useRevealOnScroll();
+  const tabHighlightRef = useRef(null);
+  const tabRefs = useRef([]);
   const [activeJob, setActiveJob] = useState('Fraunhofer-Institute');
-  const [highlightStyle, setHighlightStyle] = useState({});
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   const jobNames = [
     'Fraunhofer-Institute',
@@ -16,24 +18,35 @@ const Jobs = () => {
   ];
 
   useEffect(() => {
-    const activeIndex = jobNames.indexOf(activeJob);
-    // Ensure that activeIndex is valid
-    if (activeIndex !== -1) {
-      // Check if window width is less than or equal to 768px
-      const isHorizontal = window.innerWidth <= 768;
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
 
-      // Calculate translate value based on orientation
-      const translateValue = isHorizontal
-        ? `calc(${activeIndex} * 172.953px)` // Use 156.3px for horizontal
-        : `calc(${activeIndex} * 42px)`; // Use 42px for vertical
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
-      // Determine the correct transform property based on orientation
-      const transform = isHorizontal ? `translateX(${translateValue})` : `translateY(${translateValue})`;
-
-      setHighlightStyle({ transform });
+  const updateHighlightPosition = (index) => {
+    const tab = tabRefs.current[index];
+    if (tab) {
+      const tabSize = windowWidth <= 600 ? tab.offsetWidth : tab.offsetHeight;
+      const transformValue = index * tabSize;
+      const transformProp = windowWidth <= 600 ? 'translateX' : 'translateY';
+      if (tabHighlightRef.current) {
+        tabHighlightRef.current.style.transform = `${transformProp}(${transformValue}px)`;
+      }
     }
-  }, [activeJob, jobNames.length]);
+  };
 
+  const handleTabClick = (jobName, index) => {
+    setActiveJob(jobName);
+    updateHighlightPosition(index);
+  };
+
+  useEffect(() => {
+    const activeIndex = jobNames.indexOf(activeJob);
+    updateHighlightPosition(activeIndex);
+  }, [activeJob, windowWidth]);
   return (
     <section id='jobs' className={styles.jobsWrapper}>
       <h2 className={styles.jobHead} ref={addRef(0.5)}>
@@ -43,20 +56,21 @@ const Jobs = () => {
         {/* <div className={styles.tabHighlightBar}>
         </div> */}
         <div role='tablist' className={styles.tabList}>
-          {jobNames.map((jobName) => (
+          {jobNames.map((jobName, index) => (
             <button
-              className={styles.tablistButton}
+              className={styles.tabListButton}
               key={jobName}
-              onClick={() => setActiveJob(jobName)}
+              onClick={() => handleTabClick(jobName, index)}
               style={{
                 color: activeJob === jobName ? 'var(--green)' : 'var(--slate)',
                 backgroundColor: activeJob === jobName ? 'var(--light-navy)' : 'var(--navy)',
               }}
+              ref={(el) => (tabRefs.current[index] = el)}
             >
               <span>{jobName}</span>
             </button>
           ))}
-          <div className={styles.tabHighlight} style={highlightStyle} />
+          <div className={styles.tabHighlight} ref={tabHighlightRef} />
         </div>
 
         <div className={styles.jobPanel}>

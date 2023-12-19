@@ -11,7 +11,7 @@
   min-height: 100vh;
 }
 .fillHeight {
-  padding: 0px -10px 0px 300px;
+  padding: 0px 150px;
 }
 
 @media (max-width: 600px) {

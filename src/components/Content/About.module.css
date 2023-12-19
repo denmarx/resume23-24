@@ -106,6 +106,9 @@
   .aboutMeInfo {
     font-size: var(--fz-md);
   }
+  .aboutMeHead {
+    font-size: var(--fz-xxl);
+  }
   .imageWrapper {
     width: 70%;
   }
