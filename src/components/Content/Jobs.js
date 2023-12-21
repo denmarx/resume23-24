@@ -29,9 +29,9 @@ const Jobs = () => {
   const updateHighlightPosition = (index) => {
     const tab = tabRefs.current[index];
     if (tab) {
-      const tabSize = windowWidth <= 600 ? tab.offsetWidth : tab.offsetHeight;
+      const tabSize = windowWidth <= 768 ? tab.offsetWidth : tab.offsetHeight;
       const transformValue = index * tabSize;
-      const transformProp = windowWidth <= 600 ? 'translateX' : 'translateY';
+      const transformProp = windowWidth <= 768 ? 'translateX' : 'translateY';
       if (tabHighlightRef.current) {
         tabHighlightRef.current.style.transform = `${transformProp}(${transformValue}px)`;
       }

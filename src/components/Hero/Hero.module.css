@@ -80,3 +80,23 @@
     font-size: var(--fz-lg);
   }
 }
+
+/* Small devices rotated horizontally */
+@media only screen and (max-height:500px) and (orientation: landscape) {
+  .titleContainer {
+    height: auto;
+    padding-top: var(--nav-height);
+  }
+  .title  h1{
+    font-size: var(--fz-md);
+  }
+  .title  h2{
+    font-size: var(--fz-xxl);
+  }
+  .title  h3{
+  font-size: var(--fz-xl);
+}
+.title p {
+  font-size: var(--fz-md);
+}
+}
