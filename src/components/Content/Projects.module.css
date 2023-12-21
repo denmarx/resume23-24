@@ -60,7 +60,12 @@
 }
 .styledProject .projectContent {
   position: relative;
-  grid-area: 1/1/-1/7;
+  /* grid-area: 1/1/-1/7; */
+  grid-row-start: 1;
+  grid-row-end: -1;
+  grid-column-start: 1;
+  grid-column-end: 7;
+
 }
 
 .projectOverline {
@@ -90,6 +95,23 @@
   background-color: var(--light-navy);
   color: #000;
   font-size: 18px;
+}
+
+.projectImage a::before {
+  content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    inset: 0px;
+    z-index: 3;
+    transition: var(--transition);
+
+    mix-blend-mode: screen;
+}
+
+.subImageWrapper {
+  max-width: 700px;
+  display: block;
 }
 
 .projectDescription p {
@@ -157,4 +179,57 @@
   width: 100%;
   object-fit: cover;
   /* opacity: 0; */
+}
+
+@media only screen and (max-width: 600px) { 
+  .projectsHead {
+    font-size: var(--fz-xxl);
+  }
+  .styledProject .projectContent {
+    grid-area: 1/1/-1/-1;
+    background-color: var(--green-tint);
+    /* opacity: 0.8; */
+  }
+  .projectOverline {
+    opacity: 1;
+  }
+  .projectTitle {
+    opacity: 1;
+  }
+  .projectDescription {
+    box-shadow: none;
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+    position: relative;
+    z-index: 2;
+    padding: 25px;
+    border-radius: 4px;
+    background-color: transparent;
+    color: #000;
+    font-size: 18px;
+    /* opacity: 0.9; */
+  }
+  .projectDescriptionParagraph {
+    opacity: 1;
+  }
+  .styledProject .projectImage {
+    grid-column: 1/-1;
+  }
+  .styledProject .projectImage a {
+    position: relative;
+    height: 100%;
+
+    
+  }
+  .imageWrapper {
+    object-fit: cover;
+    width: auto;
+    height: 100%;
+    filter: grayscale(100%) contrast(1) brightness(20%);
+    /* background-color: #000; */
+
+  }
+  .projectImage .imageWrapper img {
+    /* opacity: 0.2; */
+    /* background-color: #; */
+  }
 }

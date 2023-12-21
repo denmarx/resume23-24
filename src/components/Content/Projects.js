@@ -10,7 +10,7 @@ const Projects = () => {
   return (
     <section id='projects' className={styles.projectWrapper}>
       <h2 className={styles.projectsHead} ref={addRef(0.3)}>
-        Some Things I've build
+        Some Things I've Built
       </h2>
       <ul className={styles.styledProjectGrid}>
         <li className={styles.styledProject} ref={addRef(0.6)}>
@@ -82,7 +82,10 @@ const Projects = () => {
           <div className={styles.projectImage}>
             <a href='/' rel='noopener noreferrer' target='_blank'>
               <div className={styles.imageWrapper}>
+                <div className={styles.subImageWrapper}>
+
                 <img aria-hidden='true' data-placeholder-image='' decoding='async' src={enzyme} alt=''></img>
+                </div>
               </div>
             </a>
           </div>
@@ -97,7 +100,7 @@ const Projects = () => {
                 </a>
               </h3>
               <div className={styles.projectDescription}>
-                <p>
+                <p className={styles.projectDescriptionParagraph}>
                   <span>Ikigai</span> is an innovative job-finding simulator that blends the art of storytelling with
                   the power of decision-making, designed to guide users through the enthralling journey of career
                   exploration. Crafted with the versatile Monogatari visual novel engine, this interactive experience is
