@@ -16,6 +16,7 @@
   position: fixed;
   left: 4rem;
   bottom: 3rem;
+
 }
 
 .infoRight {
@@ -25,13 +26,16 @@
 }
 
 .infoContact {
-  display: flex;
+display: flex;
   font-size: 0.9rem;
+  width: 100%;
+
 }
 
 .infoContact ul {
   text-decoration: none;
   list-style: none;
+
 }
 
 .infoContact li {
@@ -146,4 +150,12 @@
   .infoRight {
     display: none;
   }
+}
+
+@media only screen and (max-height:500px) and (orientation: landscape) { 
+  .infoContact  {
+    display: none;
+
+  }
+
 }

@@ -89,8 +89,12 @@
 /* Medium devices (landscape tablets, 768px) */
 @media (max-width: 768px) {
   .aboutWrapper {
+<<<<<<< HEAD
     margin: 0px 5%;
     padding-bottom: 5%;
+=======
+    margin: 25% 5% 0px;
+>>>>>>> 2fadf96b1edd77f947583035c912d8cf0e00bf96
   }
 
   .inner {
@@ -104,6 +108,9 @@
 
 /* Small devices (portrait tablets and large phones, 600px and smaller) */
 @media only screen and (max-width: 600px) {
+  .aboutWrapper {
+    padding-bottom: 0px;
+  }
   .aboutMeInfo {
     font-size: var(--fz-md);
   }
@@ -112,5 +119,24 @@
   }
   .imageWrapper {
     width: 70%;
+  }
+}
+
+/* Small devices rotated horizontally */
+@media only screen and (max-height:500px) and (orientation: landscape) {
+  .aboutWrapper {
+    padding-bottom: 0px;
+  }
+  .aboutMeHead {
+    font-size: var(--fz-xxl);
+  }
+  .aboutMeInfo p {
+    font-size: var(--fz-md);
+  }
+  .skillsList {
+    font-size: var(--fz-md);
+  }
+  .imageWrapper {
+    width: 50%;
   }
 }
