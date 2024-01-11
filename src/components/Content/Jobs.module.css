@@ -180,6 +180,7 @@
 @media (max-width: 600px) {
   .jobsWrapper {
     /* margin: 0px 5%; */
+    padding-bottom: 5%;
   }
   .jobHead {
     font-size: var(--fz-xxl);

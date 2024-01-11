@@ -14,8 +14,8 @@ const About = () => {
           <div>
             <p>Hello there!</p>
             <p>
-              I'm Dennis, a software engineer with a background in science. I specialize in building dynamic, intuitive
-              digital products, with an approach that leverages precision, creativity and user experience.
+              I'm Dennis, a front-end web developer with a background in science. I specialize in building dynamic,
+              intuitive digital products, with an approach that leverages precision, creativity and user experience.
             </p>
             <p>
               If you're looking for a reliable and technically proficient developer to bring your projects to life,
