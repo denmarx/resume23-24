@@ -37,7 +37,7 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <a href='/' target='_blank' rel='noopener'>
+              <a href='https://www.linkedin.com/in/dennis-marx-5b479b2a8' target='_blank' rel='noopener noreferrer'>
                 <span>03</span>
                 <strong>LinkedIn</strong>
               </a>
