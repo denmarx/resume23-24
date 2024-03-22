@@ -1,8 +1,8 @@
 import styles from './Projects.module.css';
 import enzyme from '../../assets/enzyme.JPG';
-import bfs from '../../assets/bfs.JPG';
-import memento from '../../assets/memento.jpg';
-import v1_website from '../../assets/v1_website.JPG';
+// import bfs from '../../assets/bfs.JPG';
+// import memento from '../../assets/memento.jpg';
+// import v1_website from '../../assets/v1_website.JPG';
 import useRevealOnScroll from '../utils/js/useRevealOnScroll';
 
 const Projects = () => {
@@ -10,7 +10,7 @@ const Projects = () => {
   return (
     <section id='projects' className={styles.projectWrapper}>
       <h2 className={styles.projectsHead} ref={addRef(0.3)}>
-        Some Things I've Built
+        Projects
       </h2>
       <ul className={styles.styledProjectGrid}>
         <li className={styles.styledProject} ref={addRef(0.6)}>
@@ -18,15 +18,15 @@ const Projects = () => {
             <div>
               <p className={styles.projectOverline}>Featured Project</p>
               <h3 className={styles.projectTitle}>
-                <a href='/' rel='noopener noreferrer' target='_blank'>
-                  Digestive Enzyme Regulation Virtual Lab
+                <a href='https://biochem-interactive.com/' rel='noopener noreferrer' target='_blank'>
+                  Enzymatic Digestion Simulation
                 </a>
               </h3>
               <div className={styles.projectDescription}>
                 <p>
-                  Explore the intricacies of nutrient digestion at a molecular level with this educational simulator.
-                  Developed using the Matter.js physics engine and built on React, this tool provides a detailed and
-                  interactive approach to learning about the digestive process.
+                  Explore the intricacies of enzymatic nutrient digestion at a molecular level with this educational
+                  simulator. Developed using the Matter.js physics engine and built on React, this tool provides a
+                  detailed and interactive approach to learning about the digestive process.
                 </p>
               </div>
               <ul className={styles.projectTechList}>
@@ -59,7 +59,7 @@ const Projects = () => {
                   </svg>
                 </a>
                 <a
-                  href='https://bio.dennis-marx.de/'
+                  href='https://biochem-interactive.com/'
                   aria-label='External Link'
                   rel='noopener noreferrer'
                   target='_blank'
@@ -85,7 +85,7 @@ const Projects = () => {
             </div>
           </div>
           <div className={styles.projectImage}>
-            <a href='https://bio.dennis-marx.de/' rel='noopener noreferrer' target='_blank'>
+            <a href='https://biochem-interactive.com/' rel='noopener noreferrer' target='_blank'>
               <div className={styles.imageWrapper}>
                 <div className={styles.subImageWrapper}>
                   <img aria-hidden='true' data-placeholder-image='' decoding='async' src={enzyme} alt=''></img>

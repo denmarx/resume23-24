@@ -42,12 +42,6 @@ const Footer = () => {
                 <strong>LinkedIn</strong>
               </a>
             </li>
-            <li>
-              <a href='https://codepen.io/denmarx' target='_blank' rel='noopener noreferrer'>
-                <span>04</span>
-                <strong>CodePen</strong>
-              </a>
-            </li>
           </ul>
         </nav>
       </div>

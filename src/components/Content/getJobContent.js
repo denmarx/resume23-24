@@ -30,13 +30,13 @@ const getJobContent = ({ jobName, isActive }) => {
             </div>
           </>
         );
-      case 'Digital Career Advisor':
+      case 'Digital Learning Specialist':
         return (
           <>
             <h3>
-              <span>Self-Employed as a Digital Career Advisor</span>
+              <span>Self-Employed as a Digital Learning Specialist</span>
             </h3>
-            <p className={styles.range}>February 2021 - October 2022</p>
+            <p className={styles.range}>February 2021 - present</p>
             <div>
               <ul className={styles.jobList}>
                 <li>
@@ -56,28 +56,8 @@ const getJobContent = ({ jobName, isActive }) => {
             </div>
           </>
         );
-      case 'Hospitality Manager':
-        return (
-          <>
-            <h3>
-              <span>Hospitality Manager</span>
-            </h3>
-            <p className={styles.range}>October 2021 - October 2022</p>
-            <div>
-              <ul className={styles.jobList}>
-                <li>Strategic planning and business model development for multiple gastronomy establishments.</li>
-                <li>
-                  Oversight of daily operations, including staff management, financial planning, and customer service.
-                </li>
-                <li>Implementation of quality control standards to ensure an excellent customer experience.</li>
-                <li>
-                  Coordination of marketing and promotional activities to enhance brand awareness and customer loyalty.
-                </li>
-              </ul>
-            </div>
-          </>
-        );
-      case 'Bremen Education Service':
+
+      case 'Teacher':
         return (
           <>
             <h3>

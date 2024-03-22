@@ -10,12 +10,7 @@ const Jobs = () => {
   const [activeJob, setActiveJob] = useState('Fraunhofer-Institute');
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
-  const jobNames = [
-    'Fraunhofer-Institute',
-    'Digital Career Advisor',
-    'Hospitality Manager',
-    'Bremen Education Service',
-  ];
+  const jobNames = ['Fraunhofer-Institute', 'Digital Learning Specialist', 'Teacher'];
 
   useEffect(() => {
     const handleResize = () => {
