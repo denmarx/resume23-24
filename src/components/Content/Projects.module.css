@@ -96,6 +96,16 @@
   font-size: 18px;
 }
 
+.projectDescription a {
+  text-decoration: none;
+  color: var(--green);
+}
+
+.projectDescription a:hover {
+  color: var(--lightest-slate);
+  transition: 0.3s ease-in-out;
+}
+
 .projectImage a::before {
   content: '';
   position: absolute;
@@ -189,6 +199,11 @@
     background-color: var(--green-tint);
     /* opacity: 0.8; */
   }
+  .styledProject:nth-of-type(2n + 1) .projectContent {
+    grid-area: 1/1/-1/-1;
+    background-color: var(--green-tint);
+  }
+
   .projectOverline {
     opacity: 1;
   }
@@ -213,6 +228,11 @@
   .styledProject .projectImage {
     grid-column: 1/-1;
   }
+
+  .styledProject:nth-of-type(2n + 1) .projectImage {
+    grid-column: 1/-1;
+  }
+
   .styledProject .projectImage a {
     position: relative;
     height: 100%;
