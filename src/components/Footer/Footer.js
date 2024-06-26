@@ -14,7 +14,7 @@ const Footer = () => {
             <li>Web Developer</li>
           </ul>
           <ul className={styles.location}>
-            <li>Bremen, Germany</li>
+            <li>Vancouver, Canada</li>
             <li>
               <strong>dennis.marx93@gmail.com</strong>
             </li>

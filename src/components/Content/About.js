@@ -14,22 +14,22 @@ const About = () => {
           <div>
             <p>Hello there!</p>
             <p>
-              I'm Dennis, a front-end web developer with a background in science. I specialize in building dynamic,
-              intuitive digital products, with an approach that leverages precision, creativity and user experience.
+              I am Dennis, a web and mobile developer with a background in science. I specialize in crafting practical
+              and intuitive digital products, blending precision, creativity, and a focus on user experience to deliver
+              effective solutions.
             </p>
             <p>
-              If you're looking for a reliable and technically proficient developer to bring your projects to life,
-              let's connect! I'm excited to discuss how my skills and experience can contribute to the success of your
-              next project.
+              If you're in need of a dependable developer with solid technical skills to bring your projects to
+              fruition, I'm here to help. Let's connect and discuss how my experience can benefit your next project.
             </p>
             <p className={styles.skillsListParagraph} ref={addRef(0.8)}>
               Here are a few technologies I've been working with recently:
             </p>
             <ul className={styles.skillsList} ref={addRef(1)}>
               <li>JavaScript (ES6+)</li>
-              <li>TypeScript</li>
+              <li>Next.js</li>
               <li>React</li>
-              <li>Matter.js</li>
+              <li>React Native</li>
               <li>Node.js</li>
               <li>Git</li>
             </ul>

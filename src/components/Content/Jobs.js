@@ -7,10 +7,10 @@ const Jobs = () => {
   const addRef = useRevealOnScroll();
   const tabHighlightRef = useRef(null);
   const tabRefs = useRef([]);
-  const [activeJob, setActiveJob] = useState('Fraunhofer-Institute');
+  const [activeJob, setActiveJob] = useState('Web Developer');
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
-  const jobNames = ['Fraunhofer-Institute', 'Digital Learning Specialist', 'Teacher'];
+  const jobNames = ['Web Developer', 'Fraunhofer-Institute', 'Teacher'];
 
   useEffect(() => {
     const handleResize = () => {

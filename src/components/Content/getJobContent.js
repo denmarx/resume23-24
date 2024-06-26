@@ -4,6 +4,48 @@ import styles from './Jobs.module.css';
 const getJobContent = ({ jobName, isActive }) => {
   const setJobContent = (name) => {
     switch (name) {
+      case 'Web Developer':
+        return (
+          <>
+            <h3>
+              <span>Self-Employed as Web Developer</span>
+            </h3>
+            <p className={styles.range}>February 2021 - present</p>
+            <div>
+              <ul className={styles.jobList}>
+                <li>
+                  Led the design and implementation of a{' '}
+                  <a
+                    href='https://biochem-interactive.com/'
+                    aria-label='External Link'
+                    rel='noopener noreferrer'
+                    target='_blank'
+                  >
+                    digital education platform
+                  </a>
+                  , increasing user engagement and success rates.
+                </li>
+                <li>
+                  Developed tailored{' '}
+                  <a
+                    href='https://dennis-marx.de/game/game.html'
+                    aria-label='External Link'
+                    rel='noopener noreferrer'
+                    target='_blank'
+                  >
+                    {' '}
+                    web applications for career counseling
+                  </a>
+                  , integrating interactive tools and assessments.{' '}
+                </li>
+                <li>
+                  Built and maintained responsive, user-friendly personal websites using HTML, CSS, JavaScript, and
+                  React.
+                </li>
+              </ul>
+            </div>
+          </>
+        );
       case 'Fraunhofer-Institute':
         return (
           <>
@@ -26,32 +68,6 @@ const getJobContent = ({ jobName, isActive }) => {
                   Authored and published scientific articles in leading journals, and participated in interdisciplinary
                   research collaborations.
                 </li>
-              </ul>
-            </div>
-          </>
-        );
-      case 'Digital Learning Specialist':
-        return (
-          <>
-            <h3>
-              <span>Self-Employed as a Digital Learning Specialist</span>
-            </h3>
-            <p className={styles.range}>February 2021 - present</p>
-            <div>
-              <ul className={styles.jobList}>
-                <li>
-                  Developed customized software solutions to support career counseling, including interactive tools and
-                  assessments.
-                </li>
-                <li>
-                  Conducted individual and group counseling sessions, both online and in-person, to assist students in
-                  making career choices.
-                </li>
-                <li>
-                  Created informational materials and guides for career orientation, helping students identify their
-                  strengths and interests.
-                </li>
-                <li>Established and maintained networks with schools and educational institutions.</li>
               </ul>
             </div>
           </>

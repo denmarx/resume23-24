@@ -30,8 +30,8 @@ const Hero = () => {
           style={{ transform: `translateY(${transformValue}px) ` }}
         >
           <p>
-            I'm a front-end web developer passionate about creating engaging digital experiences. I'm eager to join a
-            forward-thinking team to contribute to impactful projects and grow in web development.
+            I'm a web developer passionate about creating engaging digital experiences. I'm eager to join a
+            forward-thinking team to contribute to impactful projects.
           </p>
         </div>
         {/* <section className={` ${stylesAnimation.imageReveal} ${styles.titleImage} `}></section> */}

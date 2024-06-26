@@ -120,6 +120,16 @@
   margin-left: 20px;
 }
 
+.jobPanel a {
+  color: var(--green);
+  text-decoration: none;
+}
+
+.jobPanel a:hover {
+  color: var(--lightest-slate);
+  transition: 0.3s ease-in-out;
+}
+
 .tabPanel {
   width: 100%;
   height: auto;
@@ -244,7 +254,7 @@
   }
 }
 
-@media only screen and (max-height:600px) and (orientation: landscape) { 
+@media only screen and (max-height: 600px) and (orientation: landscape) {
   .jobHead {
     font-size: var(--fz-xxl);
   }
