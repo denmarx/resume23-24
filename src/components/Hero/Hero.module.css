@@ -4,7 +4,7 @@
   justify-content: center;
   -webkit-box-align: center;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   min-height: 100vh;
   height: 100vh;
   padding: 0px;
@@ -24,18 +24,62 @@
 
 .title h2 {
   letter-spacing: 0.02em;
-  margin: 0px;
-  font-size: clamp(40px, 8vw, 80px);
+  margin: 0px 0px 20px;
+  font-size: clamp(40px, 8vw, 70px);
   color: var(--lightest-slate);
 }
 
 .title h3 {
-  font-size: clamp(40px, 8vw, 65px);
+  font-size: clamp(30px, 4vw, 10px);
+  /* margin: 0px 150px 0px 0px ; */
 }
 
 .title p {
   margin-top: 1.2em;
   max-width: 680px;
+}
+
+.ctaRow {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.primaryButton {
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  border: none;
+  font-size: var(--fz-md);
+  font-family: var(--font-sans);
+  cursor: pointer;
+  background-color: var(--green);
+  color: var(--dark-navy);
+  transition: var(--transition);
+}
+
+.primaryButton:hover,
+.primaryButton:focus {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 30px -15px var(--navy-shadow);
+}
+
+.secondaryButton {
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  border: 1px solid var(--green);
+  font-size: var(--fz-md);
+  font-family: var(--font-sans);
+  cursor: pointer;
+  background-color: transparent;
+  color: var(--green);
+  transition: var(--transition);
+}
+
+.secondaryButton:hover,
+.secondaryButton:focus {
+  background-color: var(--green-tint);
+  transform: translateY(-1px);
 }
 
 /* Extra extra large devices (large laptops and desktops, until 1366px and lower) */
@@ -60,6 +104,16 @@
 @media (max-width: 768px) {
   .titleContainer {
   }
+   .ctaRow {
+    width: 100%;
+    justify-content: center;
+  }
+
+    .primaryButton,
+  .secondaryButton {
+    flex: 1 1 45%;      /* two per row if space allows */
+    text-align: center;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -78,6 +132,17 @@
   }
   .title p {
     font-size: var(--fz-lg);
+  }
+    .ctaRow {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .primaryButton,
+  .secondaryButton {
+    width: 100%;
+    flex: none;
+    text-align: center;
   }
 }
 

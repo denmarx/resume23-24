@@ -7,32 +7,37 @@ const Hero = () => {
   return (
     <>
       <section className={styles.titleContainer}>
-        <div
+        {/* <div
           className={`${styles.title} ${stylesAnimation.fadeInTitle} ${stylesAnimation.fadeInTitle1}`}
           style={{ transform: `translateY(${transformValue}px) ` }}
         >
-          <h1>Hello, my name is</h1>
-        </div>
+          <h1>Hello, my dasname is</h1>
+        </div> */}
         <div
           className={`${styles.title} ${stylesAnimation.fadeInTitle} ${stylesAnimation.fadeInTitle2}`}
           style={{ transform: `translateY(${transformValue}px) ` }}
         >
-          <h2>Dennis Marx.</h2>
+          <h2>Academic Clarity & AI-Literacy</h2>
         </div>
         <div
           className={`${styles.title} ${stylesAnimation.fadeInTitle} ${stylesAnimation.fadeInTitle3}`}
           style={{ transform: `translateY(${transformValue}px) ` }}
         >
-          <h3>I create digital web experiences.</h3>
+          <h3>I help students learn to read deeply, think clearly, write with confidence, and use AI responsibly —
+          through a structured 8-week program called <span style={{ fontStyle: "italic", color: "var(--green)" }}>The Clarity Engine.</span></h3>
         </div>
         <div
           className={`${styles.title} ${stylesAnimation.fadeInTitle} ${stylesAnimation.fadeInParagraph}`}
           style={{ transform: `translateY(${transformValue}px) ` }}
         >
-          <p>
-            I'm a software engineer and web developer passionate about creating engaging digital experiences. I'm eager
-            to join a forward-thinking team to contribute to impactful projects and grow in web development.
-          </p>
+  <div className={styles.ctaRow}>
+    <button className={styles.primaryButton}>
+      Learn More About the Program
+    </button>
+    <button className={styles.secondaryButton}>
+      Contact Me
+    </button>
+  </div>
         </div>
         {/* <section className={` ${stylesAnimation.imageReveal} ${styles.titleImage} `}></section> */}
       </section>

@@ -224,12 +224,21 @@
     object-fit: cover;
     width: auto;
     height: 100%;
-    filter: grayscale(100%) contrast(1) brightness(20%);
+    filter: grayscale(70%) contrast(1) brightness(30%);
     /* background-color: #000; */
 
   }
   .projectImage .imageWrapper img {
     /* opacity: 0.2; */
     /* background-color: #; */
+  }
+
+  .styledProject:nth-of-type(2n + 1) .projectImage {
+    grid-column: 1/-1;
+  }
+
+  .styledProject:nth-of-type(2n + 1) .projectContent {
+    grid-area: 1/1/-1/-1;
+    /* text-align: right; */
   }
 }
