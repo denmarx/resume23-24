@@ -1,161 +1,157 @@
-.info {
+.footer {
+  background-color: var(--bg-secondary);
+  border-top: 1px solid var(--border-color);
+  padding: 60px 0;
+  margin-top: 120px;
+}
+
+.footerContent {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 100px;
   display: flex;
   justify-content: space-between;
-  width: 100%;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 10;
-  transition: opacity 0.3s ease-out;
-  transform: translateY(0);
+  align-items: flex-start;
 }
 
-.infoLeft {
-  margin-left: 1.3rem;
-  position: fixed;
-  left: 4rem;
-  bottom: 3rem;
-
+.footerLeft {
+  flex: 1;
 }
 
-.infoRight {
-  position: fixed;
-  right: 2.5rem;
-  bottom: 3rem;
+.footerInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
-.infoContact {
-display: flex;
-  font-size: 0.9rem;
-  width: 100%;
-
+.name {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0;
+  line-height: 1.2;
 }
 
-.infoContact ul {
-  text-decoration: none;
+.title {
+  font-size: 16px;
+  color: var(--text-secondary);
+  margin: 0;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.location {
+  font-size: 15px;
+  color: var(--text-secondary);
+  margin: 0;
+  line-height: 1.4;
+}
+
+.copyright {
+  font-size: 13px;
+  color: var(--text-secondary);
+  margin-top: 16px;
+  margin-bottom: 0;
+  line-height: 1.4;
+  opacity: 0.7;
+}
+
+.footerRight {
+  flex: 0 0 auto;
+}
+
+.socialLinks {
+  display: flex;
+  gap: 24px;
   list-style: none;
-
+  padding: 0;
+  margin: 0;
 }
 
-.infoContact li {
-  padding-bottom: 0.3rem;
-}
-
-.occupation {
-  padding-right: 2.5rem;
-  color: var(--light-slate);
-}
-
-.social {
-  position: relative;
-  left: -5rem;
-}
-
-.social ul {
-  list-style-type: none;
-}
-
-.social li {
-  padding-bottom: 3px;
-}
-
-.social a {
+.socialLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  color: var(--text-secondary);
   text-decoration: none;
-  color: var(--light-slate);
-  font-size: 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  transition: var(--transition);
 }
 
-.social a:hover {
-  color: var(--green);
-  transition: 0.7s ease-in-out;
+.socialLink:hover {
+  color: var(--accent-primary);
+  border-color: var(--accent-primary);
+  background-color: rgba(33, 72, 161, 0.05);
 }
 
-.social span {
-  margin-right: 10px;
-  letter-spacing: -0.03rem;
-  font-size: 0.9rem;
-  color: var(--green);
+.socialLink svg {
+  width: 20px;
+  height: 20px;
 }
 
-/* Extra extra large devices (large laptops and desktops, until 1366px and lower) */
-@media (max-width: 1366px) {
-  .infoLeft {
-    bottom: 1rem;
-  }
-  .infoRight {
-    bottom: 1rem;
-  }
-  .social {
-    left: 0;
-  }
-  .social ul {
-    display: flex;
-  }
-  .social a {
-    margin-right: 10px;
-  }
-  .social span {
-    margin-right: 5px;
-  }
-}
-/* Extra large devices (large laptops and desktops, until 1200px and lower) */
+/* Responsive Design */
 @media (max-width: 1200px) {
-  .infoLeft {
-    bottom: 1rem;
-  }
-
-  .infoRight {
-    bottom: 1rem;
-  }
-
-  .social {
-    left: 0;
-  }
-  .social ul {
-    display: flex;
-  }
-  .social a {
-    margin-right: 10px;
-  }
-  .social span {
-    margin-right: 5px;
+  .footerContent {
+    padding: 0 80px;
   }
 }
 
-/* Medium devices (landscape tablets, until 768px and lower) */
 @media (max-width: 768px) {
-  .infoLeft {
-    margin-left: 0;
-    left: 0;
-    padding-left: 5%;
+  .footer {
+    padding: 48px 0;
   }
 
-  .infoRight {
-    display: none;
-    right: 0;
+  .footerContent {
+    flex-direction: column;
+    gap: 40px;
+    padding: 0 40px;
   }
 
-  .social {
-    left: -36px;
+  .footerRight {
+    flex: 1;
   }
-}
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-}
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-  .infoRight {
-    display: none;
+  .socialLinks {
+    justify-content: flex-start;
   }
 }
 
-@media only screen and (max-height:500px) and (orientation: landscape) { 
-  .infoContact  {
-    display: none;
-
+@media (max-width: 480px) {
+  .footer {
+    padding: 40px 0;
   }
 
+  .footerContent {
+    padding: 0 20px;
+    gap: 30px;
+  }
+
+  .name {
+    font-size: 18px;
+  }
+
+  .title {
+    font-size: 15px;
+  }
+
+  .location {
+    font-size: 14px;
+  }
+
+  .copyright {
+    font-size: 12px;
+  }
+
+  .socialLink {
+    width: 40px;
+    height: 40px;
+  }
+
+  .socialLink svg {
+    width: 18px;
+    height: 18px;
+  }
 }

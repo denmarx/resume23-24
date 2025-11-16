@@ -1,13 +1,12 @@
 .titleContainer {
   display: flex;
-  -webkit-box-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
   height: 100vh;
   padding: 0px;
+  background-color: var(--bg-primary);
 }
 
 .title {
@@ -16,7 +15,7 @@
 
 .title h1 {
   margin: 0px 0px 30px 4px;
-  color: var(--green);
+  color: var(--accent-secondary);
   font-family: var(--font-mono);
   font-size: clamp(var(--fz-sm), 5vw, var(--fz-md));
   font-weight: 400;
@@ -26,17 +25,22 @@
   letter-spacing: 0.02em;
   margin: 0px 0px 20px;
   font-size: clamp(40px, 8vw, 70px);
-  color: var(--lightest-slate);
+  color: var(--text-primary);
 }
 
 .title h3 {
-  font-size: clamp(30px, 4vw, 10px);
-  /* margin: 0px 150px 0px 0px ; */
+  font-size: clamp(18px, 3vw, 32px);
+  margin: 0px 0px 24px 0px;
+  color: var(--text-secondary);
+  max-width: 900px;
+  line-height: 1.6;
+  font-weight: 400;
 }
 
 .title p {
   margin-top: 1.2em;
   max-width: 680px;
+  color: var(--text-secondary);
 }
 
 .ctaRow {
@@ -44,98 +48,102 @@
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .primaryButton {
-  padding: 0.75rem 1.5rem;
-  border-radius: 4px;
+  display: inline-block;
+  padding: 12px 32px;
+  border-radius: 8px;
   border: none;
   font-size: var(--fz-md);
   font-family: var(--font-sans);
+  font-weight: 500;
   cursor: pointer;
-  background-color: var(--green);
-  color: var(--dark-navy);
+  background-color: var(--accent-primary);
+  color: var(--bg-secondary);
   transition: var(--transition);
+  text-decoration: none;
 }
 
 .primaryButton:hover,
 .primaryButton:focus {
-  transform: translateY(-1px);
-  box-shadow: 0 10px 30px -15px var(--navy-shadow);
+  background-color: #1a3885;
+  outline: none;
 }
 
 .secondaryButton {
-  padding: 0.75rem 1.5rem;
-  border-radius: 4px;
-  border: 1px solid var(--green);
+  display: inline-block;
+  padding: 12px 32px;
+  border-radius: 8px;
+  border: 2px solid var(--accent-primary);
   font-size: var(--fz-md);
   font-family: var(--font-sans);
+  font-weight: 500;
   cursor: pointer;
   background-color: transparent;
-  color: var(--green);
+  color: var(--accent-primary);
   transition: var(--transition);
+  text-decoration: none;
 }
 
 .secondaryButton:hover,
 .secondaryButton:focus {
-  background-color: var(--green-tint);
-  transform: translateY(-1px);
+  background-color: rgba(33, 72, 161, 0.05);
+  outline: none;
 }
 
-/* Extra extra large devices (large laptops and desktops, until 1366px and lower) */
-@media (max-width: 1366px) {
-  .title p {
-    /* min-width: 900px; */
-  }
-}
-
-/* Extra large devices (large laptops and desktops, until 1200px and lower) */
-@media (max-width: 1200px) {
+/* Responsive Design */
+@media (max-width: 1024px) {
   .titleContainer {
-    /* min-height: none; */
-    /* height: 800px; */
+    padding: 40px 0;
   }
 }
 
-/* Large devices (laptops/desktops, until 992px and lower) */
-@media (max-width: 992px) {
-}
-/* Medium devices (landscape tablets, until 768px and lower) */
 @media (max-width: 768px) {
   .titleContainer {
+    padding: 40px 0;
   }
-   .ctaRow {
+
+  .ctaRow {
     width: 100%;
     justify-content: center;
   }
 
-    .primaryButton,
+  .primaryButton,
   .secondaryButton {
-    flex: 1 1 45%;      /* two per row if space allows */
+    flex: 1 1 45%;
     text-align: center;
   }
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-}
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+@media (max-width: 600px) {
   .titleContainer {
     height: auto;
-    padding-top: var(--nav-height);
+    padding: var(--nav-height) 0 60px 0;
   }
+
   .title h1 {
-    margin: 0px 0px 30px 4px;
+    margin: 0px 0px 20px 0px;
     font-size: var(--fz-lg);
   }
+
+  .title h2 {
+    font-size: 32px;
+  }
+
+  .title h3 {
+    font-size: 18px;
+  }
+
   .title p {
-    font-size: var(--fz-lg);
+    font-size: var(--fz-md);
   }
-    .ctaRow {
+
+  .ctaRow {
     flex-direction: column;
     align-items: stretch;
+    gap: 12px;
   }
 
   .primaryButton,
@@ -146,22 +154,40 @@
   }
 }
 
-/* Small devices rotated horizontally */
-@media only screen and (max-height:500px) and (orientation: landscape) {
+@media only screen and (max-height: 500px) and (orientation: landscape) {
   .titleContainer {
     height: auto;
-    padding-top: var(--nav-height);
+    padding: var(--nav-height) 0 40px 0;
   }
-  .title  h1{
+
+  .title h1 {
     font-size: var(--fz-md);
+    margin: 0 0 15px 0;
   }
-  .title  h2{
+
+  .title h2 {
     font-size: var(--fz-xxl);
+    margin: 0 0 10px 0;
   }
-  .title  h3{
-  font-size: var(--fz-xl);
-}
-.title p {
-  font-size: var(--fz-md);
-}
+
+  .title h3 {
+    font-size: var(--fz-lg);
+    margin: 0 0 15px 0;
+  }
+
+  .title p {
+    font-size: var(--fz-md);
+    margin: 0;
+  }
+
+  .ctaRow {
+    margin-top: 1rem;
+    gap: 8px;
+  }
+
+  .primaryButton,
+  .secondaryButton {
+    padding: 10px 24px;
+    font-size: var(--fz-sm);
+  }
 }

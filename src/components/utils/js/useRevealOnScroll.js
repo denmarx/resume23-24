@@ -17,12 +17,16 @@ const useRevealOnScroll = () => {
         }
       });
     };
+    
     window.addEventListener('scroll', handleScroll);
+    // Trigger on mount and when route changes
+    handleScroll();
 
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
+  
   const addRef =
     (delay = 0) =>
     (el) => {

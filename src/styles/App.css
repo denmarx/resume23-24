@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  background-color: var(--bg-primary);
 }
 
 .main-content {
@@ -9,19 +10,34 @@
   width: 100%;
   max-width: 1600px;
   min-height: 100vh;
+  background-color: var(--bg-primary);
+  margin-top: var(--nav-height);
 }
+
 .fillHeight {
   padding: 0px 100px;
 }
 
+@media (max-width: 1024px) {
+  .fillHeight {
+    padding: 0px 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .fillHeight {
+    padding: 0px 40px;
+  }
+}
+
 @media (max-width: 600px) {
-  main.fillHeight {
+  .fillHeight {
     padding: 0px 25px;
   }
 }
 
-@media only screen and (max-height:500px) and (orientation: landscape) {
-  main.fillHeight {
-    /* padding: 0px 25px; */
+@media only screen and (max-height: 500px) and (orientation: landscape) {
+  .fillHeight {
+    padding: 0px 25px;
   }
- }
+}

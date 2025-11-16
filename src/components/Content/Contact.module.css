@@ -8,7 +8,7 @@
 .numberedHeading {
   display: block;
   margin-bottom: 20px;
-  color: var(--green);
+  color: var(--accent-primary);
   font-family: var(--font-mono);
   font-size: var(--fz-md);
   font-weight: 400;
@@ -17,29 +17,28 @@
   position: relative;
   width: 100%;
   white-space: nowrap;
-  color: var(--green);
 }
 
 .numberedHeading::before {
   counter-increment: section 4;
   content: '0' counter(section) '.';
   margin-right: 10px;
-  color: var(--green);
+  color: var(--accent-primary);
 }
 
 .title {
-  letter-spacing: 0.02em;
+  letter-spacing: -0.01em;
   margin: 0px;
   font-size: clamp(30px, 4vw, 70px);
-  color: var(--lightest-slate);
+  color: var(--text-primary);
   padding-bottom: 35px;
 }
 
 .emailLink {
   display: inline-block;
-  color: var(--green);
+  color: var(--accent-primary);
   background-color: transparent;
-  border: 1px solid var(--green);
+  border: 2px solid var(--accent-primary);
   border-radius: var(--border-radius);
   padding: 1.25rem 1.75rem;
   font-size: var(--fz-lg);
@@ -51,9 +50,8 @@
 }
 
 .emailLink:hover {
-  padding: 1.75rem 2rem;
-  font-size: var(--fz-xlg);
-  border: 2px solid var(--green);
+  background-color: rgba(33, 72, 161, 0.08);
+  border: 2px solid var(--accent-primary);
 }
 
 .credit {
@@ -62,9 +60,9 @@
 }
 .creditLink {
   text-decoration: none;
-  color: var(--slate);
+  color: var(--text-secondary);
 }
 
 .creditLink:hover {
-  color: var(--green);
+  color: var(--accent-primary);
 }

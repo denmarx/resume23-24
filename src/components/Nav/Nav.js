@@ -1,30 +1,45 @@
 import React, { useState } from 'react';
 import styles from './Nav.module.css';
 import shot from '../../assets/shot _small.webp';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
 
 const Nav = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
+
   const toggleSidebar = () => {
     setIsSidebarOpen(!isSidebarOpen);
   };
+
+  const handleNavClick = (sectionId) => {
+    if (location.pathname !== '/') {
+      navigate('/', { replace: true });
+      setTimeout(() => {
+        const element = document.getElementById(sectionId);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100);
+    } else {
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+    toggleSidebar();
+  };
+
   return (
     <header className={styles.styledHeader}>
       <nav className={styles.navContainer}>
         <div className={styles.logo}>{<img src={shot} alt='profile-pic-small'></img>}</div>
         <div className={styles.navbar}>
           <ol>
-            <li>
-              <a href='#aboutSection'>About</a>
-            </li>
-            <li>
-              <a href='#jobs'>Experience</a>
-            </li>
-            <li>
-              <a href='#projects'>Projects</a>
-            </li>
-            <li>
-              <a href='#contact'>Contact</a>
-            </li>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/clarity-engine">The Clarity Engine</Link></li>
+            <li><button onClick={() => handleNavClick('aboutSection')}>About</button></li>
+            <li><button onClick={() => handleNavClick('contact')}>Contact</button></li>
           </ol>
         </div>
         <div className={styles.menu}>
@@ -42,29 +57,26 @@ const Nav = () => {
               <nav>
                 <ol>
                   <li>
-                    <a href='#aboutSection' onClick={toggleSidebar}>
+                    <Link to="/" onClick={toggleSidebar}>
+                      Home
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/clarity-engine" onClick={toggleSidebar}>
+                      The Clarity Engine
+                    </Link>
+                  </li>
+                  <li>
+                    <button onClick={() => handleNavClick('aboutSection')}>
                       About
-                    </a>
+                    </button>
                   </li>
                   <li>
-                    <a href='#jobs' onClick={toggleSidebar}>
-                      Experience
-                    </a>
-                  </li>
-                  <li>
-                    <a href='#projects' onClick={toggleSidebar}>
-                      Projects
-                    </a>
-                  </li>
-                  <li>
-                    <a href='#contact' onClick={toggleSidebar}>
+                    <button onClick={() => handleNavClick('contact')}>
                       Contact
-                    </a>
+                    </button>
                   </li>
                 </ol>
-                <a href='/resume.pdf' onClick={toggleSidebar} className={styles.resumeLink}>
-                  Resume
-                </a>
               </nav>
             </aside>
           </div>

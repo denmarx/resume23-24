@@ -12,7 +12,7 @@
   position: relative;
   width: 100%;
   white-space: nowrap;
-  color: var(--lightest-slate);
+  color: var(--text-primary);
   opacity: 0;
 }
 
@@ -20,7 +20,7 @@
   counter-increment: section 3;
   content: '0' counter(section) '.';
   margin-right: 10px;
-  color: var(--green);
+  color: var(--accent-primary);
 }
 
 .projectsHead::after {
@@ -30,7 +30,7 @@
   width: 300px;
   height: 1px;
   margin-left: 20px;
-  background-color: var(--lightest-navy);
+  background-color: var(--border-light);
 }
 
 .styledProjectGrid {
@@ -70,7 +70,7 @@
 
 .projectOverline {
   margin: 10px 0px;
-  color: var(--green);
+  color: var(--accent-primary);
   /* font-family: var(--font-mono); */
   font-size: 1.1rem;
   font-weight: 400;
@@ -82,18 +82,18 @@
 
 .projectTitle a {
   text-decoration: none;
-  color: var(--light-slate);
+  color: var(--text-primary);
 }
 
 .projectDescription {
-  box-shadow: 0 10px 30px -15px #000;
-  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  box-shadow: 0 4px 12px rgba(33, 72, 161, 0.08);
+  transition: var(--transition);
   position: relative;
   z-index: 2;
   padding: 25px;
-  border-radius: 4px;
-  background-color: var(--light-navy);
-  color: #000;
+  border-radius: var(--border-radius);
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
   font-size: 18px;
 }
 
@@ -115,7 +115,7 @@
 }
 
 .projectDescription p {
-  color: var(--light-slate);
+  color: var(--text-secondary);
 }
 
 .styledProject:nth-of-type(2n + 1) .projectTechList {

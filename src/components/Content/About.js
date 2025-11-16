@@ -12,31 +12,23 @@ const About = () => {
       <div className={styles.inner}>
         <div className={styles.aboutMeInfo} ref={addRef(0.5)}>
           <div>
-            <p>Hello there!</p>
             <p>
-              I'm Dennis, a software engineer with a background in science. I specialize in building dynamic, intuitive
-              digital products, with an approach that leverages precision, creativity and user experience.
+              I'm Dennis Marx, a science educator and creator of The Clarity Engine. I'm passionate about helping students develop the thinking, reading, and writing skills they need to succeed independently.
             </p>
-            <p>
-              If you're looking for a reliable and technically proficient developer to bring your projects to life,
-              let's connect! I'm excited to discuss how my skills and experience can contribute to the success of your
-              next project.
-            </p>
-            <p className={styles.skillsListParagraph} ref={addRef(0.8)}>
-              Here are a few technologies I've been working with recently:
-            </p>
-            <ul className={styles.skillsList} ref={addRef(1)}>
-              <li>JavaScript (ES6+)</li>
-              <li>TypeScript</li>
-              <li>React</li>
-              <li>Matter.js</li>
-              <li>Node.js</li>
-              <li>Git</li>
+            <ul className={styles.credentialsList} ref={addRef(0.7)}>
+              <li><strong>Science & Chemistry Teacher</strong> in Vancouver, BC</li>
+              <li><strong>MSc in Biochemistry & Molecular Biology</strong></li>
+              <li><strong>8+ years</strong> designing learning systems and educational tools</li>
+              <li><strong>Creator of The Clarity Engine</strong> — an academic clarity & AI-literacy program</li>
             </ul>
+            <p>
+              My approach combines academic rigor with practical, hands-on learning. I believe that clarity of thinking comes from clear reading, structured reasoning, and deliberate practice—with AI as a learning partner, not a shortcut.
+            </p>
+
           </div>
         </div>
         <div className={styles.imageWrapper}>
-          <img src={shot} alt='Dennis' ref={addRef(0.5)}></img>
+          <img src={shot} alt='Dennis Marx' ref={addRef(0.5)}></img>
         </div>
       </div>
     </section>

@@ -1,57 +1,48 @@
 import styles from './Footer.module.css';
-import stylesAnimation from '../utils/animations/animations.module.css';
-import useScrollAnimation from '../utils/js/useScrollAnimation';
 
 const Footer = () => {
-  const isVisible = useScrollAnimation();
-
   return (
-    <div className={`${styles.info} ${!isVisible ? stylesAnimation.hide : ''}`}>
-      <div className={`${styles.infoLeft} ${stylesAnimation.infoLeft}`}>
-        <div className={styles.infoContact}>
-          <ul className={styles.occupation}>
-            <li>Dennis Marx</li>
-            <li>Web Developer</li>
-          </ul>
-          <ul className={styles.location}>
-            <li>Bremen, Germany</li>
-            <li>
-              <strong>dennis.marx93@gmail.com</strong>
-            </li>
-          </ul>
+    <footer className={styles.footer}>
+      <div className={styles.footerContent}>
+        {/* Left Section */}
+        <div className={styles.footerLeft}>
+          <div className={styles.footerInfo}>
+            <p className={styles.name}>Dennis Marx</p>
+            <p className={styles.title}>Science Teacher | Academic Clarity Coach</p>
+            <p className={styles.location}>Vancouver, BC</p>
+            <p className={styles.copyright}>Copyright © 2025</p>
+          </div>
+        </div>
+
+        {/* Right Section - Social Links */}
+        <div className={styles.footerRight}>
+          <nav className={styles.socialLinks}>
+            <a 
+              href='https://www.linkedin.com/in/dennis-marx/' 
+              target='_blank' 
+              rel='noopener noreferrer'
+              className={styles.socialLink}
+              aria-label='LinkedIn'
+            >
+              <svg width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' strokeWidth='2'>
+                <path d='M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z'></path>
+                <circle cx='4' cy='4' r='2'></circle>
+              </svg>
+            </a>
+            <a 
+              href='mailto:dennis.marx93@gmail.com'
+              className={styles.socialLink}
+              aria-label='Email'
+            >
+              <svg width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' strokeWidth='2'>
+                <rect x='2' y='4' width='20' height='16' rx='2'></rect>
+                <path d='m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7'></path>
+              </svg>
+            </a>
+          </nav>
         </div>
       </div>
-      <div className={`${styles.infoRight} ${stylesAnimation.infoRight}`}>
-        <nav className={styles.social}>
-          <ul>
-            <li>
-              <a href='https://github.com/denmarx' target='_blank' rel='noopener noreferrer'>
-                <span>01</span>
-                <strong>GitHub</strong>
-              </a>
-            </li>
-            <li>
-              <a href='https://www.researchgate.net/profile/Dennis-Marx' target='_blank' rel='noopener noreferrer'>
-                <span>02</span>
-                <strong>ResearchGate</strong>
-              </a>
-            </li>
-            <li>
-              <a href='/' target='_blank' rel='noopener'>
-                <span>03</span>
-                <strong>LinkedIn</strong>
-              </a>
-            </li>
-            <li>
-              <a href='https://codepen.io/denmarx' target='_blank' rel='noopener noreferrer'>
-                <span>04</span>
-                <strong>CodePen</strong>
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </div>
+    </footer>
   );
 };
 

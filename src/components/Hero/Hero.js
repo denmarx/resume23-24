@@ -7,39 +7,31 @@ const Hero = () => {
   return (
     <>
       <section className={styles.titleContainer}>
-        {/* <div
-          className={`${styles.title} ${stylesAnimation.fadeInTitle} ${stylesAnimation.fadeInTitle1}`}
-          style={{ transform: `translateY(${transformValue}px) ` }}
-        >
-          <h1>Hello, my dasname is</h1>
-        </div> */}
         <div
           className={`${styles.title} ${stylesAnimation.fadeInTitle} ${stylesAnimation.fadeInTitle2}`}
           style={{ transform: `translateY(${transformValue}px) ` }}
         >
-          <h2>Academic Clarity & AI-Literacy</h2>
+          <h2>Academic Clarity & AI-Literacy for High-School Students</h2>
         </div>
         <div
           className={`${styles.title} ${stylesAnimation.fadeInTitle} ${stylesAnimation.fadeInTitle3}`}
           style={{ transform: `translateY(${transformValue}px) ` }}
         >
-          <h3>I help students learn to read deeply, think clearly, write with confidence, and use AI responsibly —
-          through a structured 8-week program called <span style={{ fontStyle: "italic", color: "var(--green)" }}>The Clarity Engine.</span></h3>
+          <h3>I help students learn to read deeply, think clearly, write with confidence, and use AI responsibly — through a structured 8-week program called <span style={{ fontStyle: "italic", color: "var(--green)" }}>The Clarity Engine.</span></h3>
         </div>
         <div
           className={`${styles.title} ${stylesAnimation.fadeInTitle} ${stylesAnimation.fadeInParagraph}`}
           style={{ transform: `translateY(${transformValue}px) ` }}
         >
-  <div className={styles.ctaRow}>
-    <button className={styles.primaryButton}>
-      Learn More About the Program
-    </button>
-    <button className={styles.secondaryButton}>
-      Contact Me
-    </button>
-  </div>
+          <div className={styles.ctaRow}>
+            <a href="/clarity-engine" className={styles.primaryButton}>
+              Learn More About the Program
+            </a>
+            <a href="#contact" className={styles.secondaryButton}>
+              Contact Me
+            </a>
+          </div>
         </div>
-        {/* <section className={` ${stylesAnimation.imageReveal} ${styles.titleImage} `}></section> */}
       </section>
     </>
   );
