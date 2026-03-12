@@ -1,15 +1,18 @@
 .clarityPage {
   width: 100%;
-  padding: 80px 0;
-  margin-top: var(--nav-height);
+/*   padding: 80px 0; */
+ /*  margin-top: var(--nav-height); */
 }
 
 /* Hero Section */
 .heroSection {
   text-align: center;
-  padding: 100px 50px;
-  margin-bottom: 80px;
+  padding: 160px 40px 180px 40px;;
+/*   margin-bottom: 80px; */
   opacity: 0;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
   animation: fadeInUp 0.8s ease-out forwards;
 }
 
@@ -17,17 +20,77 @@
   font-size: clamp(40px, 8vw, 70px);
   color: var(--text-primary);
   letter-spacing: -0.01em;
-  margin: 0 0 20px 0;
-  font-weight: 700;
+  margin: 0 0 24px 0;
+  font-weight: 800;
 }
 
 .subheadline {
   font-size: clamp(18px, 2.5vw, 24px);
   color: var(--text-secondary);
-  max-width: 800px;
+  max-width: 750px;
   margin: 0 auto;
+  margin-bottom: 16px;
   line-height: 1.6;
-  font-weight: 400;
+  font-weight: 550;
+}
+
+.supportLine {
+  margin: 10px auto 32px;
+  font-size: 1.15rem; /* ~17–18px */
+  line-height: 1.55;
+  max-width: 700px;
+  color: var(--text-secondary);
+  text-align: center;
+}
+
+/* Buttons */
+.primaryButton {
+  display: inline-block;
+  padding: 12px 32px;
+  border-radius: 8px;
+  border: none;
+  font-size: var(--fz-md);
+  font-family: var(--font-sans);
+  font-weight: 500;
+  cursor: pointer;
+  background-color: var(--accent-primary);
+  color: var(--bg-secondary);
+  transition: var(--transition);
+  text-decoration: none;
+}
+
+.primaryButton:hover,
+.primaryButton:focus {
+  background-color: #1a3885;
+  outline: none;
+}
+
+.secondaryButton {
+  display: inline-block;
+  padding: 12px 32px;
+  border-radius: 8px;
+  border: 2px solid var(--accent-primary);
+  font-size: var(--fz-md);
+  font-family: var(--font-sans);
+  font-weight: 500;
+  cursor: pointer;
+  background-color: transparent;
+  color: var(--accent-primary);
+  transition: var(--transition);
+  text-decoration: none;
+}
+
+.secondaryButton:hover,
+.secondaryButton:focus {
+  background-color: rgba(33, 72, 161, 0.05);
+  outline: none;
+}
+.ctaRow {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 /* Section Wrapper */
@@ -410,7 +473,7 @@
 
 @media (max-width: 480px) {
   .clarityPage {
-    padding: 40px 0;
+    padding: 10px 0;
   }
 
   .heroSection {
@@ -493,6 +556,6 @@
   }
 
   .contactSection {
-    padding: 60px 20px;
+    padding: 0px 20px;
   }
 }

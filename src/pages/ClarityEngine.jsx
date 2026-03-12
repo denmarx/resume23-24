@@ -1,8 +1,16 @@
 import styles from './ClarityEngine.module.css';
 import useRevealOnScroll from '../components/utils/js/useRevealOnScroll';
+import { Link } from 'react-router-dom';
 
 const ClarityEngine = () => {
   const addRef = useRevealOnScroll();
+
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   const weeks = [
     {
@@ -70,8 +78,20 @@ const ClarityEngine = () => {
       <section className={styles.heroSection} ref={addRef(0.3)}>
         <h1 className={styles.mainHeadline}>The Clarity Engine</h1>
         <p className={styles.subheadline}>
-          An 8-week academic clarity program that teaches students how to read, think, write, and use AI responsibly — so they can work independently and confidently.
+          A modern learning system that teaches students to read better, think clearer, write smarter — with AI done right.
         </p>
+        <p className={styles.supportLine}>
+      An 8-week clarity program for high-school students who need structure, 
+      reasoning skills, and academic independence.
+    </p>
+        <div className={styles.ctaRow}>
+          <a href="mailto: dennis.marx93@gmail.com" className={styles.primaryButton}>
+            Book Diagnostic Session
+            </a>
+          <button onClick={() => scrollToSection('program')} className={styles.secondaryButton} style={{ background: 'none', border: '2px solid #2148A1', color: '#2148A1', padding: '12px 32px', borderRadius: '8px', cursor: 'pointer', fontSize: '1rem', fontWeight: '600', fontFamily: 'inherit' }}>
+            How It Works
+            </button>
+        </div>
       </section>
 
       {/* Who This Helps */}
@@ -97,7 +117,7 @@ const ClarityEngine = () => {
       </section>
 
       {/* 8-Week Program Overview */}
-      <section className={styles.sectionWrapper} ref={addRef(0.4)}>
+      <section id="program" className={styles.sectionWrapper} ref={addRef(0.4)}>
         <h2 className={styles.sectionHeading}>The 8-Week Program</h2>
         <p className={styles.programDescription}>
           Each week builds on the last, combining reading, reasoning, writing, AI-literacy tasks, and a measurable outcome.

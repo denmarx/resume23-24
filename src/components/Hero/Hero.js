@@ -1,6 +1,7 @@
 import stylesAnimation from '../utils/animations/animations.module.css';
 import styles from '../Hero/Hero.module.css';
 import useTitleScrollAnimation from '../utils/js/useTitleScrollAnimation';
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
   const transformValue = useTitleScrollAnimation();
@@ -24,10 +25,10 @@ const Hero = () => {
           style={{ transform: `translateY(${transformValue}px) ` }}
         >
           <div className={styles.ctaRow}>
-            <a href="/clarity-engine" className={styles.primaryButton}>
+            <Link to="/clarity-engine" className={styles.primaryButton}>
               Learn More About the Program
-            </a>
-            <a href="#contact" className={styles.secondaryButton}>
+            </Link>
+            <a href="mailto: dennis.marx93@gmail.com" className={styles.secondaryButton}>
               Contact Me
             </a>
           </div>

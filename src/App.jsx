@@ -39,7 +39,7 @@ const App = () => {
                 <WhatIDo />
                 <About />
                 <ClarityEnginePreview />
-                <Contact />
+{/*                 <Contact /> */}
               </>
             } 
           />

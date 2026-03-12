@@ -1,5 +1,5 @@
 .styledHeader {
-  padding: 0 50px;
+  padding: 12px 24px; 
   display: flex;
   -webkit-box-pack: justify;
   justify-content: space-between;

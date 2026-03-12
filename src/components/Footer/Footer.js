@@ -18,7 +18,7 @@ const Footer = () => {
         <div className={styles.footerRight}>
           <nav className={styles.socialLinks}>
             <a 
-              href='https://www.linkedin.com/in/dennis-marx/' 
+              href='https://www.linkedin.com/in/dennis-marx-5b479b2a8/' 
               target='_blank' 
               rel='noopener noreferrer'
               className={styles.socialLink}

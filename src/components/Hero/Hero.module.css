@@ -120,7 +120,7 @@
 @media (max-width: 600px) {
   .titleContainer {
     height: auto;
-    padding: var(--nav-height) 0 60px 0;
+    padding: 0px 0 0px 0;
   }
 
   .title h1 {

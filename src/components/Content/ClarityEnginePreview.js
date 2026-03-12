@@ -1,5 +1,6 @@
 import styles from './ClarityEnginePreview.module.css';
 import useRevealOnScroll from '../utils/js/useRevealOnScroll';
+import { Link } from 'react-router-dom';
 
 const ClarityEnginePreview = () => {
   const addRef = useRevealOnScroll();
@@ -27,9 +28,9 @@ const ClarityEnginePreview = () => {
         </ul>
       </div>
 
-      <a href="/clarity-engine" className={styles.ctaButton} ref={addRef(0.7)}>
+      <Link to="/clarity-engine" className={styles.ctaButton} ref={addRef(0.7)}>
         Explore the 8-Week Program →
-      </a>
+      </Link>
     </section>
   );
 };
